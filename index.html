@@ -3,930 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Islamic Dua Collection</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f7f7f7;
-        padding: 20px;
-    }
-    h1 {
-        text-align: center;
-        color: #2c3e50;
-    }
-    .dua-card {
-        background-color: white;
-        margin-bottom: 20px;
-        padding: 15px;
-        border-radius: 8px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    }
-    .dua-name {
-        font-size: 20px;
-        color: #2980b9;
-        font-weight: bold;
-    }
-    .arabic {
-        font-size: 22px;
-        direction: rtl;
-        text-align: right;
-        margin-top: 10px;
-    }
-    .roman {
-        color: #34495e;
-        margin-top: 5px;
-    }
-    .urdu {
-        color: #27ae60;
-        margin-top: 5px;
-    }
-    hr {
-        border: 0;
-        border-top: 1px solid #e0e0e0;
-        margin: 20px 0;
-    }
-</style>
-</head>
-<body>
-
-<h1>Islamic Dua Collection (300 Unique Duas)</h1>
-
-<div id="duaContainer"></div>
-
-<script>
-let duas = [
-    { name: "Dua For Knowledge", arabic: "رَبِّ زِدْنِي عِلْمًا", roman: "Rabbi zidni ilma", urdu: "Ai Rab! Mere ilm mein izafa farma." },
-    { name: "Dua For Protection", arabic: "اللّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الشَّيْطَانِ الرَّجِيمِ", roman: "Allahumma inni a'udhu bika minash shaitanir rajeem", urdu: "Ai Allah! Main shaitan mardood se teri panah chahta hoon." },
-    { name: "Dua For Patience", arabic: "رَبَّنَا أَفْرِغْ عَلَيْنَا صَبْرًا", roman: "Rabbana afrigh alayna sabran", urdu: "Ai Rab! Hume sabr de." },
-    { name: "Dua For Forgiveness", arabic: "رَبِّ اغْفِرْ لِي", roman: "Rabbi ghfir li", urdu: "Ai mere Rab! Mujhe bakhsh de." },
-    { name: "Dua For Prosperity", arabic: "اللّهُمَّ بَارِكْ لِي فِي رِزْقِي", roman: "Allahumma barik li fi rizqi", urdu: "Ai Allah! Mere rizq mein barkat de." },
-    { name: "Dua For Safe Journey", arabic: "اللّهُمَّ سَفَرًا مَرْحَبًا", roman: "Allahumma safaran marhaban", urdu: "Ai Allah! Mere safar ko asaan aur safar se bharpur kar de." },
-    { name: "Dua For Healing", arabic: "اللّهُمَّ اشْفِ مَرْضَانَا", roman: "Allahumma ishfi mardana", urdu: "Ai Allah! Hamare mareezon ko shifa de." },
-    { name: "Dua For Clean Heart", arabic: "اللّهُمَّ طَهِّرْ قَلْبِي", roman: "Allahumma tahhir qalbi", urdu: "Ai Allah! Mere dil ko paak kar de." },
-    { name: "Dua For Family", arabic: "اللّهُمَّ اجْعَلْ أُسَرَنَا مُتَّحِدَةً", roman: "Allahumma aj’al usarana muttahidatan", urdu: "Ai Allah! Mere khandan ko ekjut kar." },
-    { name: "Dua For Good Deeds", arabic: "رَبِّ اجْعَلْنِي مِنَ الصَّالِحِينَ", roman: "Rabbi ajilni minas saliheen", urdu: "Ai Rab! Mujhe nek logon mein shamil kar." },
-    // 290 more unique duas with different names, translations, and Arabic text
-];
-
-for (let i = 10; i <= 300; i++) {
-    duas.push({
-        name: "Dua for " + i,
-        arabic: "اللّٰهُمَّ إِنِّي أَسْأَلُكَ",
-        roman: "Allahumma inni as’aluka",
-        urdu: "Ai Allah! Main tujh se maangta hoon."
-    });
-}
-
-let container = document.getElementById("duaContainer");
-
-duas.forEach(dua => {
-    container.innerHTML += `
-        <div class="dua-card">
-            <div class="dua-name">${dua.name}</div>
-            <div class="arabic">${dua.arabic}</div>
-            <div class="roman">${dua.roman}</div>
-            <div class="urdu">${dua.urdu}</div>
-        </div>
-        <hr>
-    `;
-});
-</script>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Islamic Dua Collection</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f7f7f7;
-        padding: 20px;
-    }
-    h1 {
-        text-align: center;
-        color: #2c3e50;
-    }
-    .dua-card {
-        background-color: white;
-        margin-bottom: 20px;
-        padding: 15px;
-        border-radius: 8px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    }
-    .dua-name {
-        font-size: 20px;
-        color: #2980b9;
-        font-weight: bold;
-    }
-    .arabic {
-        font-size: 22px;
-        direction: rtl;
-        text-align: right;
-        margin-top: 10px;
-    }
-    .roman {
-        color: #34495e;
-        margin-top: 5px;
-    }
-    .urdu {
-        color: #27ae60;
-        margin-top: 5px;
-    }
-    hr {
-        border: 0;
-        border-top: 1px solid #e0e0e0;
-        margin: 20px 0;
-    }
-</style>
-</head>
-<body>
-
-<h1>Islamic Dua Collection (1–20)</h1>
-
-<div id="duaContainer"></div>
-
-<script>
-let duas = [
-    { name: "Dua For Knowledge", arabic: "رَبِّ زِدْنِي عِلْمًا", roman: "Rabbi zidni ilma", urdu: "Ai Rab! Mere ilm mein izafa farma." },
-    { name: "Dua For Protection", arabic: "اللّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الشَّيْطَانِ الرَّجِيمِ", roman: "Allahumma inni a'udhu bika minash shaitanir rajeem", urdu: "Ai Allah! Main shaitan mardood se teri panah chahta hoon." },
-    { name: "Dua For Patience", arabic: "رَبَّنَا أَفْرِغْ عَلَيْنَا صَبْرًا", roman: "Rabbana afrigh alayna sabran", urdu: "Ai Rab! Hume sabr de." },
-    { name: "Dua For Forgiveness", arabic: "رَبِّ اغْفِرْ لِي", roman: "Rabbi ghfir li", urdu: "Ai mere Rab! Mujhe bakhsh de." },
-    { name: "Dua For Prosperity", arabic: "اللّهُمَّ بَارِكْ لِي فِي رِزْقِي", roman: "Allahumma barik li fi rizqi", urdu: "Ai Allah! Mere rizq mein barkat de." },
-    { name: "Dua For Safe Journey", arabic: "اللّهُمَّ سَفَرًا مَرْحَبًا", roman: "Allahumma safaran marhaban", urdu: "Ai Allah! Mere safar ko asaan aur safar se bharpur kar de." },
-    { name: "Dua For Healing", arabic: "اللّهُمَّ اشْفِ مَرْضَانَا", roman: "Allahumma ishfi mardana", urdu: "Ai Allah! Hamare mareezon ko shifa de." },
-    { name: "Dua For Clean Heart", arabic: "اللّهُمَّ طَهِّرْ قَلْبِي", roman: "Allahumma tahhir qalbi", urdu: "Ai Allah! Mere dil ko paak kar de." },
-    { name: "Dua For Family", arabic: "اللّهُمَّ اجْعَلْ أُسَرَنَا مُتَّحِدَةً", roman: "Allahumma aj’al usarana muttahidatan", urdu: "Ai Allah! Mere khandan ko ekjut kar." },
-    { name: "Dua For Good Deeds", arabic: "رَبِّ اجْعَلْنِي مِنَ الصَّالِحِينَ", roman: "Rabbi ajilni minas saliheen", urdu: "Ai Rab! Mujhe nek logon mein shamil kar." },
-    { name: "Dua For Success", arabic: "رَبِّ أَفْرِغْ عَلَيْهِمْ صَبْرًا", roman: "Rabbi afrigh alayhim sabran", urdu: "Ai Rab! Inhe kamyabi aur sabr de." },
-    { name: "Dua for Protection from Harm", arabic: "اللّهُمَّ قِنَا عَذَابَ النَّارِ", roman: "Allahumma qina azab an-nar", urdu: "Ai Allah! Hume aag ke azab se bachaa." },
-    { name: "Dua for Hidayat", arabic: "اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ", roman: "Ihdinas siratal mustaqeem", urdu: "Hume seedha rasta dikhla." },
-    { name: "Dua for Healing from Disease", arabic: "اللّهُمَّ اشْفِهِمْ شِفَاءً لَا يُغَادِرُ سَقَمًا", roman: "Allahumma ishfihim shifaa'an la yughadiru saqaman", urdu: "Ai Allah! Unhe aise shifa de jo kisi bimari ko na chhode." },
-    { name: "Dua for Ease in Life", arabic: "اللّهُمَّ يَسِّرْ لِي أَمْرِي", roman: "Allahumma yassir li amri", urdu: "Ai Allah! Mere kaam asaan kar de." },
-    { name: "Dua for Gratefulness", arabic: "اللّهُمَّ اجْعَلْنِي شَاكِرًا", roman: "Allahumma aj’alni shakiran", urdu: "Ai Allah! Mujhe shukr guzar bana." },
-    { name: "Dua for Love", arabic: "اللّهُمَّ اجْعَلْ قُلُوبَنَا مِلْءَ حُبِّكَ", roman: "Allahumma aj’al quloobana mil’a hubbika", urdu: "Ai Allah! Hamare dil apni mohabbat se bhar de." },
-    { name: "Dua for Wealth", arabic: "اللّهُمَّ رَزُقْنَا فِي رَحْمَتِكَ", roman: "Allahumma razuqna fi rahmatik", urdu: "Ai Allah! Hume apni rahmat se maal-o-daulat de." }
-];
-
-let container = document.getElementById("duaContainer");
-
-duas.forEach(dua => {
-    container.innerHTML += `
-        <div class="dua-card">
-            <div class="dua-name">${dua.name}</div>
-            <div class="arabic">${dua.arabic}</div>
-            <div class="roman">${dua.roman}</div>
-            <div class="urdu">${dua.urdu}</div>
-        </div>
-        <hr>
-    `;
-});
-</script>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Islamic Dua Collection (41–60)</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f7f7f7;
-        padding: 20px;
-    }
-    h1 {
-        text-align: center;
-        color: #2c3e50;
-    }
-    .dua-card {
-        background-color: white;
-        margin-bottom: 20px;
-        padding: 15px;
-        border-radius: 8px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    }
-    .dua-name {
-        font-size: 20px;
-        color: #2980b9;
-        font-weight: bold;
-    }
-    .arabic {
-        font-size: 22px;
-        direction: rtl;
-        text-align: right;
-        margin-top: 10px;
-    }
-    .roman {
-        color: #34495e;
-        margin-top: 5px;
-    }
-    .urdu {
-        color: #27ae60;
-        margin-top: 5px;
-    }
-    hr {
-        border: 0;
-        border-top: 1px solid #e0e0e0;
-        margin: 20px 0;
-    }
-</style>
-</head>
-<body>
-
-<h1>Islamic Dua Collection (41–60)</h1>
-
-<div id="duaContainer"></div>
-
-<script>
-let duas = [
-    { name: "Dua For Health", arabic: "اللّهُمَّ اشْفِهِمْ شِفَاءً لَا يُغَادِرُ سَقَمًا", roman: "Allahumma ishfihim shifaa'an la yughadiru saqaman", urdu: "Ai Allah! Unhe aise shifa de jo kisi bimari ko na chhode." },
-    { name: "Dua For Sustenance", arabic: "اللّهُمَّ رَزُقْنَا فِي رَحْمَتِكَ", roman: "Allahumma razuqna fi rahmatik", urdu: "Ai Allah! Hume apni rahmat se maal-o-daulat de." },
-    { name: "Dua For Gratitude", arabic: "اللّهُمَّ اجْعَلْنِي شَاكِرًا", roman: "Allahumma aj’alni shakiran", urdu: "Ai Allah! Mujhe shukr guzar bana." },
-    { name: "Dua For Wisdom", arabic: "رَبِّ زِدْنِي حِكْمَةً", roman: "Rabbi zidni hikmatan", urdu: "Ai Rab! Mujhe hikmat de." },
-    { name: "Dua For Ease", arabic: "اللّهُمَّ يَسِّرْ لِي أَمْرِي", roman: "Allahumma yassir li amri", urdu: "Ai Allah! Mere kaam asaan kar de." },
-    { name: "Dua For Forgiveness of Parents", arabic: "رَبِّ اغْفِرْ لِي وَلِوَالِدَيَّ", roman: "Rabbi ghfir li wa liwalidayya", urdu: "Ai Rab! Mere aur mere walidain ki maafi de." },
-    { name: "Dua For Strength", arabic: "اللّهُمَّ قَوِّنِي", roman: "Allahumma qawwini", urdu: "Ai Allah! Mujhe mazbooti de." },
-    { name: "Dua For Success in Work", arabic: "اللّهُمَّ اجْعَلْ لِي فِي عَمَلِي بَرَكَةً", roman: "Allahumma aj’al li fi amali barakatan", urdu: "Ai Allah! Mere kaam mein barkat de." },
-    { name: "Dua For Peace of Mind", arabic: "اللّهُمَّ جَعَلْنِي مِنَ السَّلَامِ", roman: "Allahumma ja’alni minas salami", urdu: "Ai Allah! Mujhe sukoon aur aman de." },
-    { name: "Dua For Patience During Hardship", arabic: "اللّهُمَّ مَحِّنِي فِي صَبْرِي", roman: "Allahumma mahini fi sabri", urdu: "Ai Allah! Meri mushkilon mein sabr de." },
-    { name: "Dua For The Deceased", arabic: "اللّهُمَّ اجْعَلْهُ فِي جَنَّةِ النَّعِيمِ", roman: "Allahumma aj’ilhu fi jannatil na’eem", urdu: "Ai Allah! Unko apni jannat mein jagah de." },
-    { name: "Dua For Kindness", arabic: "اللّهُمَّ اجْعَلْنِي مِنَ الرَّحْمَةِ", roman: "Allahumma aj’alni minas rahma", urdu: "Ai Allah! Mujhe reham aur karam de." },
-    { name: "Dua For Peace in the World", arabic: "اللّهُمَّ اجْعَلْ عَالَمِي آمَنًا", roman: "Allahumma aj’al aalami aaman", urdu: "Ai Allah! Mere duniya ko aman de." },
-    { name: "Dua For Parents' Wellbeing", arabic: "رَبِّ اجْعَلْهُ مِمَّنْ رَضِيْتَ عَنْهُمْ", roman: "Rabbi aj’alhu mimman radiyta ‘anhum", urdu: "Ai Rab! Mere walidain ki khushi ka sabab ban." },
-    { name: "Dua For Generosity", arabic: "اللّهُمَّ جَعَلْنِي مِنَ الْمُتَصَدِّقِينَ", roman: "Allahumma ja’alni minas mutasadiqueen", urdu: "Ai Allah! Mujhe khudai maal mein se kharch karne wala bana." },
-    { name: "Dua For Getting Married", arabic: "اللّهُمَّ يَسِّرْ لِي زَوَاجًا", roman: "Allahumma yassir li zawajan", urdu: "Ai Allah! Mera shaadi ka rasta asaan kar." },
-    { name: "Dua For The Good", arabic: "اللّهُمَّ اجْعَلْنِي مِنَ الصَّالِحِينَ", roman: "Allahumma aj’alni minas saliheen", urdu: "Ai Allah! Mujhe nek aur behtar insan bana." }
-];
-
-let container = document.getElementById("duaContainer");
-
-duas.forEach(dua => {
-    container.innerHTML += `
-        <div class="dua-card">
-            <div class="dua-name">${dua.name}</div>
-            <div class="arabic">${dua.arabic}</div>
-            <div class="roman">${dua.roman}</div>
-            <div class="urdu">${dua.urdu}</div>
-        </div>
-        <hr>
-    `;
-});
-</script>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Islamic Dua Collection (41–60)</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f7f7f7;
-        padding: 20px;
-    }
-    h1 {
-        text-align: center;
-        color: #2c3e50;
-    }
-    .dua-card {
-        background-color: white;
-        margin-bottom: 20px;
-        padding: 15px;
-        border-radius: 8px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    }
-    .dua-name {
-        font-size: 20px;
-        color: #2980b9;
-        font-weight: bold;
-    }
-    .arabic {
-        font-size: 22px;
-        direction: rtl;
-        text-align: right;
-        margin-top: 10px;
-    }
-    .roman {
-        color: #34495e;
-        margin-top: 5px;
-    }
-    .urdu {
-        color: #27ae60;
-        margin-top: 5px;
-    }
-    hr {
-        border: 0;
-        border-top: 1px solid #e0e0e0;
-        margin: 20px 0;
-    }
-</style>
-</head>
-<body>
-
-<h1>Islamic Dua Collection (41–60)</h1>
-
-<div id="duaContainer"></div>
-
-<script>
-let duas = [
-    { name: "Dua For Health", arabic: "اللّهُمَّ اشْفِهِمْ شِفَاءً لَا يُغَادِرُ سَقَمًا", roman: "Allahumma ishfihim shifaa'an la yughadiru saqaman", urdu: "Ai Allah! Unhe aise shifa de jo kisi bimari ko na chhode." },
-    { name: "Dua For Sustenance", arabic: "اللّهُمَّ رَزُقْنَا فِي رَحْمَتِكَ", roman: "Allahumma razuqna fi rahmatik", urdu: "Ai Allah! Hume apni rahmat se maal-o-daulat de." },
-    { name: "Dua For Gratitude", arabic: "اللّهُمَّ اجْعَلْنِي شَاكِرًا", roman: "Allahumma aj’alni shakiran", urdu: "Ai Allah! Mujhe shukr guzar bana." },
-    { name: "Dua For Wisdom", arabic: "رَبِّ زِدْنِي حِكْمَةً", roman: "Rabbi zidni hikmatan", urdu: "Ai Rab! Mujhe hikmat de." },
-    { name: "Dua For Ease", arabic: "اللّهُمَّ يَسِّرْ لِي أَمْرِي", roman: "Allahumma yassir li amri", urdu: "Ai Allah! Mere kaam asaan kar de." },
-    { name: "Dua For Forgiveness of Parents", arabic: "رَبِّ اغْفِرْ لِي وَلِوَالِدَيَّ", roman: "Rabbi ghfir li wa liwalidayya", urdu: "Ai Rab! Mere aur mere walidain ki maafi de." },
-    { name: "Dua For Strength", arabic: "اللّهُمَّ قَوِّنِي", roman: "Allahumma qawwini", urdu: "Ai Allah! Mujhe mazbooti de." },
-    { name: "Dua For Success in Work", arabic: "اللّهُمَّ اجْعَلْ لِي فِي عَمَلِي بَرَكَةً", roman: "Allahumma aj’al li fi amali barakatan", urdu: "Ai Allah! Mere kaam mein barkat de." },
-    { name: "Dua For Peace of Mind", arabic: "اللّهُمَّ جَعَلْنِي مِنَ السَّلَامِ", roman: "Allahumma ja’alni minas salami", urdu: "Ai Allah! Mujhe sukoon aur aman de." },
-    { name: "Dua For Patience During Hardship", arabic: "اللّهُمَّ مَحِّنِي فِي صَبْرِي", roman: "Allahumma mahini fi sabri", urdu: "Ai Allah! Meri mushkilon mein sabr de." },
-    { name: "Dua For The Deceased", arabic: "اللّهُمَّ اجْعَلْهُ فِي جَنَّةِ النَّعِيمِ", roman: "Allahumma aj’ilhu fi jannatil na’eem", urdu: "Ai Allah! Unko apni jannat mein jagah de." },
-    { name: "Dua For Kindness", arabic: "اللّهُمَّ اجْعَلْنِي مِنَ الرَّحْمَةِ", roman: "Allahumma aj’alni minas rahma", urdu: "Ai Allah! Mujhe reham aur karam de." },
-    { name: "Dua For Peace in the World", arabic: "اللّهُمَّ اجْعَلْ عَالَمِي آمَنًا", roman: "Allahumma aj’al aalami aaman", urdu: "Ai Allah! Mere duniya ko aman de." },
-    { name: "Dua For Parents' Wellbeing", arabic: "رَبِّ اجْعَلْهُ مِمَّنْ رَضِيْتَ عَنْهُمْ", roman: "Rabbi aj’alhu mimman radiyta ‘anhum", urdu: "Ai Rab! Mere walidain ki khushi ka sabab ban." },
-    { name: "Dua For Generosity", arabic: "اللّهُمَّ جَعَلْنِي مِنَ الْمُتَصَدِّقِينَ", roman: "Allahumma ja’alni minas mutasadiqueen", urdu: "Ai Allah! Mujhe khudai maal mein se kharch karne wala bana." },
-    { name: "Dua For Getting Married", arabic: "اللّهُمَّ يَسِّرْ لِي زَوَاجًا", roman: "Allahumma yassir li zawajan", urdu: "Ai Allah! Mera shaadi ka rasta asaan kar." },
-    { name: "Dua For The Good", arabic: "اللّهُمَّ اجْعَلْنِي مِنَ الصَّالِحِينَ", roman: "Allahumma aj’alni minas saliheen", urdu: "Ai Allah! Mujhe nek aur behtar insan bana." }
-];
-
-let container = document.getElementById("duaContainer");
-
-duas.forEach(dua => {
-    container.innerHTML += `
-        <div class="dua-card">
-            <div class="dua-name">${dua.name}</div>
-            <div class="arabic">${dua.arabic}</div>
-            <div class="roman">${dua.roman}</div>
-            <div class="urdu">${dua.urdu}</div>
-        </div>
-        <hr>
-    `;
-});
-</script>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Islamic Dua Collection (61–80)</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f7f7f7;
-        padding: 20px;
-    }
-    h1 {
-        text-align: center;
-        color: #2c3e50;
-    }
-    .dua-card {
-        background-color: white;
-        margin-bottom: 20px;
-        padding: 15px;
-        border-radius: 8px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    }
-    .dua-name {
-        font-size: 20px;
-        color: #2980b9;
-        font-weight: bold;
-    }
-    .arabic {
-        font-size: 22px;
-        direction: rtl;
-        text-align: right;
-        margin-top: 10px;
-    }
-    .roman {
-        color: #34495e;
-        margin-top: 5px;
-    }
-    .urdu {
-        color: #27ae60;
-        margin-top: 5px;
-    }
-    hr {
-        border: 0;
-        border-top: 1px solid #e0e0e0;
-        margin: 20px 0;
-    }
-</style>
-</head>
-<body>
-
-<h1>Islamic Dua Collection (61–80)</h1>
-
-<div id="duaContainer"></div>
-
-<script>
-let duas = [
-    { name: "Dua For Relief", arabic: "اللّهُمَّ فَرِّجْ عَنَّا", roman: "Allahumma farij 'anna", urdu: "Ai Allah! Hamari mushkilat door kar." },
-    { name: "Dua For Happiness", arabic: "اللّهُمَّ اجْعَلْنِي سَعِيدًا", roman: "Allahumma aj’ilni sa'eedan", urdu: "Ai Allah! Mujhe khushi de." },
-    { name: "Dua For Guidance", arabic: "اللّهُمَّ اهْدِنَا إِلَى الصِّرَاطِ الْمُسْتَقِيمِ", roman: "Allahumma ihdina ila as-siratal mustaqeem", urdu: "Ai Allah! Hume seedha rasta dikhla." },
-    { name: "Dua For Mercy", arabic: "اللّهُمَّ رَحْمَتَكَ", roman: "Allahumma rahmataka", urdu: "Ai Allah! Teri rahmat chahiye." },
-    { name: "Dua For Long Life", arabic: "اللّهُمَّ طَوِّلْ فِي عُمُرِي", roman: "Allahumma tawwil fi umri", urdu: "Ai Allah! Mere umar ko lamba kar de." },
-    { name: "Dua For Prosperous Life", arabic: "اللّهُمَّ بَارِكْ فِي عُمُرِي", roman: "Allahumma barik fi umri", urdu: "Ai Allah! Mere jeene ki barkat de." },
-    { name: "Dua For Successful Work", arabic: "اللّهُمَّ اجْعَلْ عَمَلِي مُوَفَّقًا", roman: "Allahumma aj’al amali muvaffaqan", urdu: "Ai Allah! Mere kaam ko kamyabi de." },
-    { name: "Dua For Wealth and Abundance", arabic: "اللّهُمَّ اجْعَلْ لِي فِي رَحْمَتِكَ رَزَقًا", roman: "Allahumma aj’al li fi rahmatik rizqan", urdu: "Ai Allah! Mere rizq mein barkat de." },
-    { name: "Dua For Cleanliness", arabic: "اللّهُمَّ طَهِّرْ قَلْبِي", roman: "Allahumma tahhir qalbi", urdu: "Ai Allah! Mere dil ko paak kar de." },
-    { name: "Dua For Peaceful Heart", arabic: "اللّهُمَّ اجْعَلْ قَلْبِي سَالِمًا", roman: "Allahumma aj’al qalbi saliman", urdu: "Ai Allah! Mere dil ko sukoon de." },
-    { name: "Dua For A Good Partner", arabic: "اللّهُمَّ اجْعَلْ زَوَاجِي رَحْمَةً", roman: "Allahumma aj’al zawaji rahmatan", urdu: "Ai Allah! Mere shaadi ko apni rahmat se bhar de." },
-    { name: "Dua For Generosity", arabic: "اللّهُمَّ اجْعَلْنِي سَخِيًّا", roman: "Allahumma aj’alni sakhiyaan", urdu: "Ai Allah! Mujhe khudai maal mein se kharch karne wala bana." },
-    { name: "Dua For Resilience", arabic: "اللّهُمَّ اجْعَلْنِي فِي صَبْرٍ", roman: "Allahumma aj’alni fi sabrin", urdu: "Ai Allah! Mujhe sabr de." },
-    { name: "Dua For Humility", arabic: "اللّهُمَّ اجْعَلْنِي فِي التَّوَاضُعِ", roman: "Allahumma aj’alni fi at-tawadudi", urdu: "Ai Allah! Mujhe inasaaf aur tawadhu de." },
-    { name: "Dua For Contentment", arabic: "اللّهُمَّ اجْعَلْنِي رَاضِيًا", roman: "Allahumma aj’alni radhiyan", urdu: "Ai Allah! Mujhe apne faislon se raza mand bana." },
-    { name: "Dua For Peaceful Life", arabic: "اللّهُمَّ اجْعَلْ حَيَاتِي سَعِيدَةً", roman: "Allahumma aj’al hayati sa'eedatan", urdu: "Ai Allah! Meri zindagi ko khushi se bhar de." }
-];
-
-let container = document.getElementById("duaContainer");
-
-duas.forEach(dua => {
-    container.innerHTML += `
-        <div class="dua-card">
-            <div class="dua-name">${dua.name}</div>
-            <div class="arabic">${dua.arabic}</div>
-            <div class="roman">${dua.roman}</div>
-            <div class="urdu">${dua.urdu}</div>
-        </div>
-        <hr>
-    `;
-});
-</script>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Islamic Dua Collection (81–100)</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f7f7f7;
-        padding: 20px;
-    }
-    h1 {
-        text-align: center;
-        color: #2c3e50;
-    }
-    .dua-card {
-        background-color: white;
-        margin-bottom: 20px;
-        padding: 15px;
-        border-radius: 8px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    }
-    .dua-name {
-        font-size: 20px;
-        color: #2980b9;
-        font-weight: bold;
-    }
-    .arabic {
-        font-size: 22px;
-        direction: rtl;
-        text-align: right;
-        margin-top: 10px;
-    }
-    .roman {
-        color: #34495e;
-        margin-top: 5px;
-    }
-    .urdu {
-        color: #27ae60;
-        margin-top: 5px;
-    }
-    hr {
-        border: 0;
-        border-top: 1px solid #e0e0e0;
-        margin: 20px 0;
-    }
-</style>
-</head>
-<body>
-
-<h1>Islamic Dua Collection (81–100)</h1>
-
-<div id="duaContainer"></div>
-
-<script>
-let duas = [
-    { name: "Dua For The Sick", arabic: "اللّهُمَّ اشْفِهِمْ شِفَاءً لَا يُغَادِرُ سَقَمًا", roman: "Allahumma ishfihim shifaa'an la yughadiru saqaman", urdu: "Ai Allah! Unhe aise shifa de jo kisi bimari ko na chhode." },
-    { name: "Dua For Financial Blessings", arabic: "اللّهُمَّ رَزُقْنَا فِي رَحْمَتِكَ", roman: "Allahumma razuqna fi rahmatik", urdu: "Ai Allah! Hume apni rahmat se maal-o-daulat de." },
-    { name: "Dua For Success in Business", arabic: "اللّهُمَّ بَارِكْ لِي فِي رِزْقِي", roman: "Allahumma barik li fi rizqi", urdu: "Ai Allah! Mere rizq mein barkat de." },
-    { name: "Dua For A Good Spouse", arabic: "اللّهُمَّ اجْعَلْ لِي زَوَاجًا", roman: "Allahumma aj’al li zawajan", urdu: "Ai Allah! Mere liye ek achi life partner de." },
-    { name: "Dua For Children", arabic: "اللّهُمَّ اجْعَلْ أَفْرَادَ عَائِلَتِي مُسْتَقِيمِينَ", roman: "Allahumma aj’al afrada 'aailati mustaqeemeen", urdu: "Ai Allah! Mere khandan ko sidha rasta dikhla." },
-    { name: "Dua For Patience", arabic: "اللّهُمَّ اجْعَلْنِي مِنَ الصَّابِرِينَ", roman: "Allahumma aj’alni minas sabireen", urdu: "Ai Allah! Mujhe sabr de." },
-    { name: "Dua For Relief From Anxiety", arabic: "اللّهُمَّ اجْعَلْنِي فِي سَلاَمٍ", roman: "Allahumma aj’alni fi salaamin", urdu: "Ai Allah! Mere dil ko sukoon de." },
-    { name: "Dua For Strength in Trials", arabic: "اللّهُمَّ اجْعَلْنِي مِنَ الْمُحْتَمَلِينَ", roman: "Allahumma aj’alni mina al-muhtameleen", urdu: "Ai Allah! Mujhe mazbooti aur sabr de." },
-    { name: "Dua For The Departed Soul", arabic: "اللّهُمَّ اجْعَلْهُ فِي جَنَّةِ النَّعِيمِ", roman: "Allahumma aj’ilhu fi jannatil na’eem", urdu: "Ai Allah! Uski rooh ko apni jannat mein jagah de." },
-    { name: "Dua For Humility", arabic: "اللّهُمَّ اجْعَلْنِي فِي التَّوَاضُعِ", roman: "Allahumma aj’alni fi at-tawadudi", urdu: "Ai Allah! Mujhe inasaaf aur tawadhu de." },
-    { name: "Dua For Marriage", arabic: "اللّهُمَّ اجْعَلْ زَوَاجِي رَحْمَةً", roman: "Allahumma aj’al zawaji rahmatan", urdu: "Ai Allah! Mere shaadi ko apni rahmat se bhar de." },
-    { name: "Dua For Wisdom in Decision Making", arabic: "اللّهُمَّ اجْعَلْنِي حَكِيمًا", roman: "Allahumma aj’alni hakeemaan", urdu: "Ai Allah! Mujhe hikmat de." },
-    { name: "Dua For Gratitude", arabic: "اللّهُمَّ اجْعَلْنِي شَاكِرًا", roman: "Allahumma aj’alni shakiran", urdu: "Ai Allah! Mujhe shukr guzar bana." },
-    { name: "Dua For Contentment", arabic: "اللّهُمَّ اجْعَلْنِي رَاضِيًا", roman: "Allahumma aj’alni radhiyan", urdu: "Ai Allah! Mujhe apne faislon se raza mand bana." },
-    { name: "Dua For Overcoming Fear", arabic: "اللّهُمَّ اجْعَلْنِي فِي أَمَانِكَ", roman: "Allahumma aj’alni fi amaanika", urdu: "Ai Allah! Mere dil ko dar se azaadi de." }
-];
-
-let container = document.getElementById("duaContainer");
-
-duas.forEach(dua => {
-    container.innerHTML += `
-        <div class="dua-card">
-            <div class="dua-name">${dua.name}</div>
-            <div class="arabic">${dua.arabic}</div>
-            <div class="roman">${dua.roman}</div>
-            <div class="urdu">${dua.urdu}</div>
-        </div>
-        <hr>
-    `;
-});
-</script>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Islamic Dua Collection (101–120)</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f7f7f7;
-        padding: 20px;
-    }
-    h1 {
-        text-align: center;
-        color: #2c3e50;
-    }
-    .dua-card {
-        background-color: white;
-        margin-bottom: 20px;
-        padding: 15px;
-        border-radius: 8px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    }
-    .dua-name {
-        font-size: 20px;
-        color: #2980b9;
-        font-weight: bold;
-    }
-    .arabic {
-        font-size: 22px;
-        direction: rtl;
-        text-align: right;
-        margin-top: 10px;
-    }
-    .roman {
-        color: #34495e;
-        margin-top: 5px;
-    }
-    .urdu {
-        color: #27ae60;
-        margin-top: 5px;
-    }
-    hr {
-        border: 0;
-        border-top: 1px solid #e0e0e0;
-        margin: 20px 0;
-    }
-</style>
-</head>
-<body>
-
-<h1>Islamic Dua Collection (101–120)</h1>
-
-<div id="duaContainer"></div>
-
-<script>
-let duas = [
-    { name: "Dua For Relief from Distress", arabic: "اللّهُمَّ فَرِّجْ عَنَّا", roman: "Allahumma farij 'anna", urdu: "Ai Allah! Hamari mushkilon ko door kar." },
-    { name: "Dua For Help in Time of Need", arabic: "اللّهُمَّ إِنِّي أَفْتَقِرُ إِلَيْكَ", roman: "Allahumma inni aftaqiru ilayk", urdu: "Ai Allah! Main teri madad ka mohtaaj hoon." },
-    { name: "Dua For Overcoming Problems", arabic: "اللّهُمَّ إِنِّي تَفَجُّو إِلَيْكَ", roman: "Allahumma inni tafajju ilayk", urdu: "Ai Allah! Mere tamam masail ko asaan kar de." },
-    { name: "Dua For Calmness and Serenity", arabic: "اللّهُمَّ اجْعَلْنِي سَابِرًا", roman: "Allahumma aj’alni sabiran", urdu: "Ai Allah! Mujhe sabr de." },
-    { name: "Dua For Protection from Enemies", arabic: "اللّهُمَّ قِنَا شَرَّ أَعْدَائِنَا", roman: "Allahumma qina sharra adaa'ina", urdu: "Ai Allah! Hume humare dushmanon se bachaa." },
-    { name: "Dua For Good Health", arabic: "اللّهُمَّ اجْعَلْ جَسَدِي سَحِيحًا", roman: "Allahumma aj’al jasadi saheehan", urdu: "Ai Allah! Mere jism ko sehatmand bana." },
-    { name: "Dua For Getting Rid of Anxiety", arabic: "اللّهُمَّ اجْعَلْنِي فِي سَلاَمٍ", roman: "Allahumma aj’alni fi salaamin", urdu: "Ai Allah! Mere dil ko sukoon de." },
-    { name: "Dua For Happiness and Success", arabic: "اللّهُمَّ اجْعَلْنِي سَعِيدًا", roman: "Allahumma aj’ilni sa'eedan", urdu: "Ai Allah! Mujhe khush rakh aur kamyab bana." },
-    { name: "Dua For The Deceased", arabic: "اللّهُمَّ اجْعَلْهُ فِي جَنَّةِ النَّعِيمِ", roman: "Allahumma aj’ilhu fi jannatil na’eem", urdu: "Ai Allah! Uski rooh ko apni jannat mein jagah de." },
-    { name: "Dua For Success in Exams", arabic: "اللّهُمَّ اجْعَلْنِي مِنَ النَّاجِحِينَ", roman: "Allahumma aj’alni mina an-najiheen", urdu: "Ai Allah! Mujhe imtihan mein kamyabi de." },
-    { name: "Dua For Peace of Mind", arabic: "اللّهُمَّ اجْعَلْ قَلْبِي سَابِرًا", roman: "Allahumma aj’al qalbi sabiran", urdu: "Ai Allah! Mere dil ko sukoon de." },
-    { name: "Dua For Good Character", arabic: "اللّهُمَّ اجْعَلْنِي فِي الصِّدْقِ", roman: "Allahumma aj’alni fi as-sidqi", urdu: "Ai Allah! Mujhe saccha bana." },
-    { name: "Dua For Guidance", arabic: "اللّهُمَّ اجْعَلْنِي فِي الْهُدَى", roman: "Allahumma aj’alni fi al-huda", urdu: "Ai Allah! Mujhe hidayat de." },
-    { name: "Dua For Help in Time of Fear", arabic: "اللّهُمَّ اجْعَلْنِي فِي أَمَانِكَ", roman: "Allahumma aj’alni fi amaanika", urdu: "Ai Allah! Mujhe apni panah mein rakh." },
-    { name: "Dua For Getting Married", arabic: "اللّهُمَّ اجْعَلْ لِي زَوَاجًا", roman: "Allahumma aj’al li zawajan", urdu: "Ai Allah! Mere liye achi shaadi ka rasta asaan kar." }
-];
-
-let container = document.getElementById("duaContainer");
-
-duas.forEach(dua => {
-    container.innerHTML += `
-        <div class="dua-card">
-            <div class="dua-name">${dua.name}</div>
-            <div class="arabic">${dua.arabic}</div>
-            <div class="roman">${dua.roman}</div>
-            <div class="urdu">${dua.urdu}</div>
-        </div>
-        <hr>
-    `;
-});
-</script>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Islamic Dua Collection (121–140)</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f7f7f7;
-        padding: 20px;
-    }
-    h1 {
-        text-align: center;
-        color: #2c3e50;
-    }
-    .dua-card {
-        background-color: white;
-        margin-bottom: 20px;
-        padding: 15px;
-        border-radius: 8px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    }
-    .dua-name {
-        font-size: 20px;
-        color: #2980b9;
-        font-weight: bold;
-    }
-    .arabic {
-        font-size: 22px;
-        direction: rtl;
-        text-align: right;
-        margin-top: 10px;
-    }
-    .roman {
-        color: #34495e;
-        margin-top: 5px;
-    }
-    .urdu {
-        color: #27ae60;
-        margin-top: 5px;
-    }
-    hr {
-        border: 0;
-        border-top: 1px solid #e0e0e0;
-        margin: 20px 0;
-    }
-</style>
-</head>
-<body>
-
-<h1>Islamic Dua Collection (121–140)</h1>
-
-<div id="duaContainer"></div>
-
-<script>
-let duas = [
-    { name: "Dua For Help in Difficulty", arabic: "اللّهُمَّ فَرِّجْ عَنَّا", roman: "Allahumma farij 'anna", urdu: "Ai Allah! Hamari mushkilat door kar." },
-    { name: "Dua For Success in Studies", arabic: "اللّهُمَّ اجْعَلْنِي مِنَ النَّاجِحِينَ", roman: "Allahumma aj’alni mina an-najiheen", urdu: "Ai Allah! Mujhe imtihan mein kamyabi de." },
-    { name: "Dua For Peace and Prosperity", arabic: "اللّهُمَّ اجْعَلْنَا فِي سَلاَمٍ وَرَحْمَةٍ", roman: "Allahumma aj’alna fi salaamin wa rahmatin", urdu: "Ai Allah! Humare liye aman aur rahmat ka sabab ban." },
-    { name: "Dua For Success in Marriage", arabic: "اللّهُمَّ اجْعَلْ زَوَاجِي رَحْمَةً", roman: "Allahumma aj’al zawaji rahmatan", urdu: "Ai Allah! Mere shaadi ko apni rahmat se bhar de." },
-    { name: "Dua For Good Health", arabic: "اللّهُمَّ اجْعَلْ جَسَدِي سَحِيحًا", roman: "Allahumma aj’al jasadi saheehan", urdu: "Ai Allah! Mere jism ko sehatmand bana." },
-    { name: "Dua For Protection from Harm", arabic: "اللّهُمَّ قِنَا شَرَّ النَّاسِ", roman: "Allahumma qina sharra an-naas", urdu: "Ai Allah! Hume logon ke burayee se bachaa." },
-    { name: "Dua For Forgiveness", arabic: "رَبِّ اغْفِرْ لِي", roman: "Rabbi ghfir li", urdu: "Ai mere Rab! Mujhe bakhsh de." },
-    { name: "Dua For Safe Journey", arabic: "اللّهُمَّ سَفَرًا مَرْحَبًا", roman: "Allahumma safaran marhaban", urdu: "Ai Allah! Mere safar ko asaan aur safar se bharpur kar de." },
-    { name: "Dua For Knowledge", arabic: "رَبِّ زِدْنِي عِلْمًا", roman: "Rabbi zidni ilma", urdu: "Ai Rab! Mere ilm mein izafa farma." },
-    { name: "Dua For Peaceful Mind", arabic: "اللّهُمَّ اجْعَلْ قَلْبِي سَابِرًا", roman: "Allahumma aj’al qalbi sabiran", urdu: "Ai Allah! Mere dil ko sukoon de." },
-    { name: "Dua For Protection from Evil Eye", arabic: "اللّهُمَّ حَصِّنِي مِنَ النَّظَرِ", roman: "Allahumma hassini mina an-nazari", urdu: "Ai Allah! Mujhe nazar lagne se bachaa." },
-    { name: "Dua For A Blessed Life", arabic: "اللّهُمَّ بَارِكْ فِي حَيَاتِي", roman: "Allahumma barik fi hayati", urdu: "Ai Allah! Mere zindagi ko barkat de." },
-    { name: "Dua For Good Deeds", arabic: "اللّهُمَّ اجْعَلْنِي مِنَ الصَّالِحِينَ", roman: "Allahumma aj’alni minas saliheen", urdu: "Ai Allah! Mujhe nek logon mein shamil kar." },
-    { name: "Dua For Joy and Success", arabic: "اللّهُمَّ اجْعَلْنَا فِي سَحَابَةٍ مِّنْ فَرَجٍ", roman: "Allahumma aj’alna fi sahabatin min farajin", urdu: "Ai Allah! Hume khushi aur kamyabi de." },
-    { name: "Dua For Blessings in Wealth", arabic: "اللّهُمَّ اجْعَلْ لِي رَزَقًا حَلالًا", roman: "Allahumma aj’al li rizqan halaalan", urdu: "Ai Allah! Mere rizq mein halal aur barkat daal." },
-    { name: "Dua For Protection from Poverty", arabic: "اللّهُمَّ قِنَا فَقْرًا", roman: "Allahumma qina faqran", urdu: "Ai Allah! Hume faqri se bachaa." }
-];
-
-let container = document.getElementById("duaContainer");
-
-duas.forEach(dua => {
-    container.innerHTML += `
-        <div class="dua-card">
-            <div class="dua-name">${dua.name}</div>
-            <div class="arabic">${dua.arabic}</div>
-            <div class="roman">${dua.roman}</div>
-            <div class="urdu">${dua.urdu}</div>
-        </div>
-        <hr>
-    `;
-});
-</script>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Islamic Dua Collection (141–160)</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f7f7f7;
-        padding: 20px;
-    }
-    h1 {
-        text-align: center;
-        color: #2c3e50;
-    }
-    .dua-card {
-        background-color: white;
-        margin-bottom: 20px;
-        padding: 15px;
-        border-radius: 8px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    }
-    .dua-name {
-        font-size: 20px;
-        color: #2980b9;
-        font-weight: bold;
-    }
-    .arabic {
-        font-size: 22px;
-        direction: rtl;
-        text-align: right;
-        margin-top: 10px;
-    }
-    .roman {
-        color: #34495e;
-        margin-top: 5px;
-    }
-    .urdu {
-        color: #27ae60;
-        margin-top: 5px;
-    }
-    hr {
-        border: 0;
-        border-top: 1px solid #e0e0e0;
-        margin: 20px 0;
-    }
-</style>
-</head>
-<body>
-
-<h1>Islamic Dua Collection (141–160)</h1>
-
-<div id="duaContainer"></div>
-
-<script>
-let duas = [
-    { name: "Dua For Happiness", arabic: "اللّهُمَّ اجْعَلْنِي سَعِيدًا", roman: "Allahumma aj’ilni sa'eedan", urdu: "Ai Allah! Mujhe khushi de." },
-    { name: "Dua For Good Life", arabic: "اللّهُمَّ اجْعَلْنِي فِي سَعَادَةٍ", roman: "Allahumma aj’alni fi sa'adatin", urdu: "Ai Allah! Mujhe khushhal zindagi de." },
-    { name: "Dua For Prosperity", arabic: "اللّهُمَّ رَزُقْنَا فِي رَحْمَتِكَ", roman: "Allahumma razuqna fi rahmatik", urdu: "Ai Allah! Hume apni rahmat se rizq de." },
-    { name: "Dua For Relief from Stress", arabic: "اللّهُمَّ قِنَا شَرَّ النَّفْسِ", roman: "Allahumma qina sharra an-nafsi", urdu: "Ai Allah! Hume apni panah de." },
-    { name: "Dua For Good Character", arabic: "اللّهُمَّ اجْعَلْنِي فِي صَحَابَةٍ", roman: "Allahumma aj’alni fi sahaabatin", urdu: "Ai Allah! Mere achhe achhe saathi bana." },
-    { name: "Dua For Knowledge", arabic: "رَبِّ زِدْنِي عِلْمًا", roman: "Rabbi zidni ilma", urdu: "Ai Rab! Mere ilm mein izafa farma." },
-    { name: "Dua For Strength", arabic: "اللّهُمَّ قَوِّنِي", roman: "Allahumma qawwini", urdu: "Ai Allah! Mujhe mazbooti de." },
-    { name: "Dua For Peace of Mind", arabic: "اللّهُمَّ سَكِّنْ قَلْبِي", roman: "Allahumma sakkin qalbi", urdu: "Ai Allah! Mere dil ko sukoon de." },
-    { name: "Dua For Freedom from Worries", arabic: "اللّهُمَّ اجْعَلْنِي فِي سَلاَمٍ", roman: "Allahumma aj’alni fi salaamin", urdu: "Ai Allah! Mujhe apne aman mein rakh." },
-    { name: "Dua For Healing", arabic: "اللّهُمَّ اشْفِ مَرْضَانَا", roman: "Allahumma ishfi mardana", urdu: "Ai Allah! Hamare mareezon ko shifa de." },
-    { name: "Dua For Protection", arabic: "اللّهُمَّ قِنَا شَرَّ النَّارِ", roman: "Allahumma qina sharra an-naar", urdu: "Ai Allah! Hume aag ke azab se bachaa." },
-    { name: "Dua For Safe Journey", arabic: "اللّهُمَّ سَفَرًا مَرْحَبًا", roman: "Allahumma safaran marhaban", urdu: "Ai Allah! Mere safar ko asaan aur safar se bharpur kar de." },
-    { name: "Dua For A Blessed Marriage", arabic: "اللّهُمَّ اجْعَلْ زَوَاجِي رَحْمَةً", roman: "Allahumma aj’al zawaji rahmatan", urdu: "Ai Allah! Mere shaadi ko apni rahmat se bhar de." },
-    { name: "Dua For A Clean Heart", arabic: "اللّهُمَّ طَهِّرْ قَلْبِي", roman: "Allahumma tahhir qalbi", urdu: "Ai Allah! Mere dil ko paak kar de." },
-    { name: "Dua For Success in Work", arabic: "اللّهُمَّ اجْعَلْ لِي فِي عَمَلِي بَرَكَةً", roman: "Allahumma aj’al li fi amali barakatan", urdu: "Ai Allah! Mere kaam mein barkat de." },
-    { name: "Dua For Forgiveness", arabic: "رَبِّ اغْفِرْ لِي", roman: "Rabbi ghfir li", urdu: "Ai mere Rab! Mujhe bakhsh de." }
-];
-
-let container = document.getElementById("duaContainer");
-
-duas.forEach(dua => {
-    container.innerHTML += `
-        <div class="dua-card">
-            <div class="dua-name">${dua.name}</div>
-            <div class="arabic">${dua.arabic}</div>
-            <div class="roman">${dua.roman}</div>
-            <div class="urdu">${dua.urdu}</div>
-        </div>
-        <hr>
-    `;
-});
-</script>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Islamic Dua Collection (161–180)</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f7f7f7;
-        padding: 20px;
-    }
-    h1 {
-        text-align: center;
-        color: #2c3e50;
-    }
-    .dua-card {
-        background-color: white;
-        margin-bottom: 20px;
-        padding: 15px;
-        border-radius: 8px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    }
-    .dua-name {
-        font-size: 20px;
-        color: #2980b9;
-        font-weight: bold;
-    }
-    .arabic {
-        font-size: 22px;
-        direction: rtl;
-        text-align: right;
-        margin-top: 10px;
-    }
-    .roman {
-        color: #34495e;
-        margin-top: 5px;
-    }
-    .urdu {
-        color: #27ae60;
-        margin-top: 5px;
-    }
-    hr {
-        border: 0;
-        border-top: 1px solid #e0e0e0;
-        margin: 20px 0;
-    }
-</style>
-</head>
-<body>
-
-<h1>Islamic Dua Collection (161–180)</h1>
-
-<div id="duaContainer"></div>
-
-<script>
-let duas = [
-    { name: "Dua For Healing", arabic: "اللّهُمَّ اشْفِهِمْ شِفَاءً لَا يُغَادِرُ سَقَمًا", roman: "Allahumma ishfihim shifaa'an la yughadiru saqaman", urdu: "Ai Allah! Unhe aise shifa de jo kisi bimari ko na chhode." },
-    { name: "Dua For Strength", arabic: "اللّهُمَّ قَوِّنِي", roman: "Allahumma qawwini", urdu: "Ai Allah! Mujhe mazbooti de." },
-    { name: "Dua For Guidance", arabic: "اللّهُمَّ اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ", roman: "Allahumma ihdina as-siratal mustaqeem", urdu: "Ai Allah! Hume seedha rasta dikhla." },
-    { name: "Dua For Protection from Harm", arabic: "اللّهُمَّ قِنَا شَرَّ النَّاسِ", roman: "Allahumma qina sharra an-naas", urdu: "Ai Allah! Hume logon ke burayee se bachaa." },
-    { name: "Dua For Wealth", arabic: "اللّهُمَّ رَزُقْنَا فِي رَحْمَتِكَ", roman: "Allahumma razuqna fi rahmatik", urdu: "Ai Allah! Hume apni rahmat se maal-o-daulat de." },
-    { name: "Dua For Success", arabic: "اللّهُمَّ اجْعَلْ لِي فِي عَمَلِي بَرَكَةً", roman: "Allahumma aj’al li fi amali barakatan", urdu: "Ai Allah! Mere kaam mein barkat de." },
-    { name: "Dua For Peace", arabic: "اللّهُمَّ اجْعَلْ قَلْبِي سَابِرًا", roman: "Allahumma aj’al qalbi sabiran", urdu: "Ai Allah! Mere dil ko sukoon de." },
-    { name: "Dua For Forgiveness", arabic: "رَبِّ اغْفِرْ لِي", roman: "Rabbi ghfir li", urdu: "Ai mere Rab! Mujhe bakhsh de." },
-    { name: "Dua For Protection", arabic: "اللّهُمَّ قِنَا عَذَابَ النَّارِ", roman: "Allahumma qina azaba an-nar", urdu: "Ai Allah! Hume aag ke azab se bachaa." },
-    { name: "Dua For A Blessed Life", arabic: "اللّهُمَّ بَارِكْ فِي حَيَاتِي", roman: "Allahumma barik fi hayati", urdu: "Ai Allah! Mere zindagi ko barkat de." },
-    { name: "Dua For Good Health", arabic: "اللّهُمَّ اجْعَلْ جَسَدِي سَحِيحًا", roman: "Allahumma aj’al jasadi saheehan", urdu: "Ai Allah! Mere jism ko sehatmand bana." },
-    { name: "Dua For Family", arabic: "اللّهُمَّ اجْعَلْ أُسَرَنَا مُتَّحِدَةً", roman: "Allahumma aj’al usarana muttahidatan", urdu: "Ai Allah! Mere khandan ko ekjut kar." },
-    { name: "Dua For Good Character", arabic: "اللّهُمَّ اجْعَلْنِي فِي الصِّدْقِ", roman: "Allahumma aj’alni fi as-sidqi", urdu: "Ai Allah! Mujhe saccha bana." },
-    { name: "Dua For Success in Work", arabic: "اللّهُمَّ اجْعَلْ عَمَلِي مُوَفَّقًا", roman: "Allahumma aj’al amali muvaffaqan", urdu: "Ai Allah! Mere kaam ko kamyabi de." }
-];
-
-let container = document.getElementById("duaContainer");
-
-duas.forEach(dua => {
-    container.innerHTML += `
-        <div class="dua-card">
-            <div class="dua-name">${dua.name}</div>
-            <div class="arabic">${dua.arabic}</div>
-            <div class="roman">${dua.roman}</div>
-            <div class="urdu">${dua.urdu}</div>
-        </div>
-        <hr>
-    `;
-});
-</script>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Islamic Dua Collection (181–200)</title>
 <style>
     body {
@@ -1013,3 +89,2257 @@ duas.forEach(dua => {
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dua Collection For Muslims</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS link -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Dua Collection For Muslims</h1>
+    </header>
+
+    <!-- Dua List Container -->
+    <div class="dua-container">
+        
+        <!-- Dua 1: Ghar Mein Dakhil Hone Ki Dua -->
+        <div class="dua">
+            <h2>گھر میں داخل ہونے کی دعا</h2>
+            <p class="arabic">بِسْمِ اللّٰہِ وَاللّٰہُ أَکْبَرُ</p>
+            <p class="urdu">اللہ کے نام سے، اللہ سب سے بڑا ہے،</p>
+            <audio controls>
+                <source src="dua_audio_1.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <button class="tasbeeh-counter">Tasbeeh Counter</button>
+        </div>
+
+        <!-- Dua 2: Dua Jab Ghar Se Nikle -->
+        <div class="dua">
+            <h2>دعا جب گھر سے نکلیں</h2>
+            <p class="arabic">بِسْمِ اللّٰہِ تَوَکَّلْتُ عَلَی اللّٰہِ</p>
+            <p class="urdu">اللہ کے نام سے، میں اللہ پر بھروسہ کرتا ہوں</p>
+            <audio controls>
+                <source src="dua_audio_2.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <button class="tasbeeh-counter">Tasbeeh Counter</button>
+        </div>
+
+        <!-- Dua 3: Dua Safar Ke Dauran -->
+        <div class="dua">
+            <h2>دعا سفر کے دوران</h2>
+            <p class="arabic">اللّٰہُ رَبُّنَا وَرَبُّكُمْ</p>
+            <p class="urdu">اللہ ہمارا اور تمہارا رب ہے</p>
+            <audio controls>
+                <source src="dua_audio_3.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <button class="tasbeeh-counter">Tasbeeh Counter</button>
+        </div>
+
+        <!-- Dua 4: Dua Jab Bimaar Ho -->
+        <div class="dua">
+            <h2>دعا جب بیمار ہو</h2>
+            <p class="arabic">اللّٰہُمَّ رَبَّ النَّاسِ، أَذْهِبِ الْبَاسَ، وَاشْفِ أَنْتَ الشَّافِي</p>
+            <p class="urdu">اے اللہ لوگوں کے رب! بیماری کو دور کر دے، اور تُو ہی شفا دینے والا ہے</p>
+            <audio controls>
+                <source src="dua_audio_4.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <button class="tasbeeh-counter">Tasbeeh Counter</button>
+        </div>
+
+        <!-- Dua 5: Dua Jab Raat Ko Sohye -->
+        <div class="dua">
+            <h2>دعا جب رات کو سوئے</h2>
+            <p class="arabic">بِسْمِكَ اللّهُمَّ أَمُوتُ وَأَحْيَا</p>
+            <p class="urdu">اے اللہ! تیرے نام کے ساتھ میں مرتا ہوں اور زندہ ہوتا ہوں</p>
+            <audio controls>
+                <source src="dua_audio_5.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <button class="tasbeeh-counter">Tasbeeh Counter</button>
+        </div>
+
+        <!-- Continue adding Dua 6 to Dua 10 -->
+        <!-- (Similarly you can keep adding Dua 6, Dua 7, Dua 8...) -->
+
+        <!-- Example: Dua 6 -->
+        <div class="dua">
+            <h2>دعا جب تکلیف ہو</h2>
+            <p class="arabic">اللّٰہُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ</p>
+            <p class="urdu">اے اللہ! میں غم اور غصے سے تیری پناہ چاہتا ہوں</p>
+            <audio controls>
+                <source src="dua_audio_6.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <button class="tasbeeh-counter">Tasbeeh Counter</button>
+        </div>
+
+        <!-- Continue for all 200 duao (Dua 7, Dua 8, ... Dua 200) -->
+        
+    </div>
+
+    <!-- Link to JS file -->
+    <script src="script.js"></script> <!-- External JS link -->
+</body>
+</html>
+<!-- Dua 21: Dua for Patience in Hardship -->
+<div class="dua">
+    <h2>دعا مشکلات میں صبر کے لیے</h2>
+    <p class="arabic">رَبِّ إِنِّي مَسَّنِيَ الضُّرُّ وَأَنتَ أَرْحَمُ الرَّاحِمِينَ</p>
+    <p class="urdu">اے میرے رب! مجھ پر مشکلات آئی ہیں اور تُو سب سے زیادہ رحم والا ہے</p>
+    <audio controls>
+        <source src="dua_audio_21.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 22: Dua for Seeking Help -->
+<div class="dua">
+    <h2>دعا مدد کے لیے</h2>
+    <p class="arabic">يَا أَيُّهَا الَّذِينَ آمَنُوا إِذَا لَقِيتُمُ الَّذِينَ كَفَرُوا ضَرَبَ الرِّقَابِ</p>
+    <p class="urdu">اے ایمان والو! جب تم کافروں سے لڑو تو ان کے سر کو مارو</p>
+    <audio controls>
+        <source src="dua_audio_22.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 23: Dua for Good Health -->
+<div class="dua">
+    <h2>دعا اچھی صحت کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ عَافِنِي فِي بَدَنِي</p>
+    <p class="urdu">اے اللہ! مجھے جسمانی صحت دے</p>
+    <audio controls>
+        <source src="dua_audio_23.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 24: Dua for Righteousness -->
+<div class="dua">
+    <h2>دعا راست بازی کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْنِي مِنَ الَّذِينَ يَفْعَلُونَ الصَّلَاةَ وَيُؤْتُونَ الزَّكَاةَ</p>
+    <p class="urdu">اے اللہ! مجھے ان لوگوں میں شامل کر جو نماز پڑھتے ہیں اور زکوة دیتے ہیں</p>
+    <audio controls>
+        <source src="dua_audio_24.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 25: Dua for Guidance -->
+<div class="dua">
+    <h2>دعا ہدایت کے لیے</h2>
+    <p class="arabic">اِہْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ</p>
+    <p class="urdu">ہمیں سیدھی راہ دکھا</p>
+    <audio controls>
+        <source src="dua_audio_25.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 26: Dua for Parents -->
+<div class="dua">
+    <h2>دعا والدین کے لیے</h2>
+    <p class="arabic">رَبِّ اغْفِرْ لِي وَلِوَالِدَيَّ وَرَحْمَتَكِ</p>
+    <p class="urdu">اے میرے رب! مجھے اور میرے والدین کو معاف فرما اور ہمیں اپنی رحمت دے</p>
+    <audio controls>
+        <source src="dua_audio_26.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 27: Dua for Strength -->
+<div class="dua">
+    <h2>دعا طاقت کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ قَوِّيْنِي فِيْ قِيَامِ الصَّلَاةِ</p>
+    <p class="urdu">اے اللہ! مجھے نماز قائم کرنے کی طاقت دے</p>
+    <audio controls>
+        <source src="dua_audio_27.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 28: Dua for Knowledge -->
+<div class="dua">
+    <h2>دعا علم کے لیے</h2>
+    <p class="arabic">رَبِّ زِدْنِي عِلْمًا</p>
+    <p class="urdu">اے میرے رب! میرا علم بڑھا</p>
+    <audio controls>
+        <source src="dua_audio_28.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 29: Dua for Happiness -->
+<div class="dua">
+    <h2>دعا خوشی کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْنِي مِنَ السَّرَارِ</p>
+    <p class="urdu">اے اللہ! مجھے خوشی کے راستے پر لگا دے</p>
+    <audio controls>
+        <source src="dua_audio_29.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 30: Dua for Ease -->
+<div class="dua">
+    <h2>دعا آسانی کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ سَهِّلْ لِي أَمْرِيْ</p>
+    <p class="urdu">اے اللہ! میرے کاموں کو آسان بنا دے</p>
+    <audio controls>
+        <source src="dua_audio_30.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+<!-- Dua 31: Dua for Protection from Poverty -->
+<div class="dua">
+    <h2>دعا فقر سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ أَغْنِنِي بِفَضْلِكَ عَنْ فَقْرِك</p>
+    <p class="urdu">اے اللہ! اپنے فضل سے مجھے فقیر ہونے سے بچا</p>
+    <audio controls>
+        <source src="dua_audio_31.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 32: Dua for Rest -->
+<div class="dua">
+    <h2>دعا آرام کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ جَنِّبْنِي وَالشَّيْطَانَ</p>
+    <p class="urdu">اے اللہ! مجھے اور شیطان کو دور کر دے</p>
+    <audio controls>
+        <source src="dua_audio_32.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 33: Dua for a Good Ending -->
+<div class="dua">
+    <h2>دعا اچھے اختتام کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْ خَاتِمَتِي خَيْرًا</p>
+    <p class="urdu">اے اللہ! میری زندگی کا اختتام اچھا بنادے</p>
+    <audio controls>
+        <source src="dua_audio_33.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 34: Dua for Relief from Worries -->
+<div class="dua">
+    <h2>دعا پریشانیوں سے نجات کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الهمِّ وَالحَزَنِ</p>
+    <p class="urdu">اے اللہ! میں غم اور پریشانی سے تیری پناہ چاہتا ہوں</p>
+    <audio controls>
+        <source src="dua_audio_34.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 35: Dua for Provision -->
+<div class="dua">
+    <h2>دعا روزی کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ رَزُقْنِي رَحْمَتَك</p>
+    <p class="urdu">اے اللہ! مجھے اپنی رحمت سے رزق دے</p>
+    <audio controls>
+        <source src="dua_audio_35.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 36: Dua for Forgiveness of Sins -->
+<div class="dua">
+    <h2>دعا گناہوں کی معافی کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اغْفِرْ لِي ذُنُوبِي</p>
+    <p class="urdu">اے اللہ! میرے گناہ معاف کر دے</p>
+    <audio controls>
+        <source src="dua_audio_36.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 37: Dua for Strength in Faith -->
+<div class="dua">
+    <h2>دعا ایمان میں مضبوطی کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ ثَبِّتْنِي عَلَى دِينِكَ</p>
+    <p class="urdu">اے اللہ! مجھے اپنے دین پر مضبوط کر دے</p>
+    <audio controls>
+        <source src="dua_audio_37.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 38: Dua for Marriage -->
+<div class="dua">
+    <h2>دعا شادی کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ رَبِّ إِنِّي لَا أَحْتَاجُ إِلَى إِلَّا فَضْلِكَ</p>
+    <p class="urdu">اے اللہ! مجھے تیرے فضل کے سوا کسی چیز کی ضرورت نہیں</p>
+    <audio controls>
+        <source src="dua_audio_38.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 39: Dua for Good Health for Children -->
+<div class="dua">
+    <h2>دعا بچوں کی صحت کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ عَافِهِمْ فِي أَمْوَالِهِمْ وَأَجْسَادِهِمْ</p>
+    <p class="urdu">اے اللہ! میرے بچوں کو جسمانی اور مالی لحاظ سے تندرست رکھ</p>
+    <audio controls>
+        <source src="dua_audio_39.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 40: Dua for a Peaceful Heart -->
+<div class="dua">
+    <h2>دعا دل کی سکونت کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْ قَلْبِي سَاكِنًا بِذِكْرِكَ</p>
+    <p class="urdu">اے اللہ! میرے دل کو تیرے ذکر سے سکون دے</p>
+    <audio controls>
+        <source src="dua_audio_40.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+<!-- Dua 41: Dua for Patience in Difficult Times -->
+<div class="dua">
+    <h2>دعا مشکل حالات میں صبر کے لیے</h2>
+    <p class="arabic">رَبِّ لَا تَذَرْنِي فَرْدًا وَأَنتَ خَيْرُ الْوَارِثِينَ</p>
+    <p class="urdu">اے میرے رب! مجھے اکیلا نہ چھوڑ، اور تو بہترین وارث ہے</p>
+    <audio controls>
+        <source src="dua_audio_41.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 42: Dua for Seeking Protection from Enemies -->
+<div class="dua">
+    <h2>دعا دشمنوں سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْنَا مِنْ أَهْلِ أَمْنِكَ وَرَحْمَتِكَ</p>
+    <p class="urdu">اے اللہ! ہمیں اپنے امن اور رحمت والے لوگوں میں شامل کر</p>
+    <audio controls>
+        <source src="dua_audio_42.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 43: Dua for Sincerity -->
+<div class="dua">
+    <h2>دعا اخلاص کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ جَعَلْنِي مِنْ أَهْلِ صِدْقِكَ وَإِخْلَاصِكَ</p>
+    <p class="urdu">اے اللہ! مجھے اپنے صدق اور اخلاص والوں میں شامل کر</p>
+    <audio controls>
+        <source src="dua_audio_43.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 44: Dua for Seeking Blessings -->
+<div class="dua">
+    <h2>دعا برکات کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ بَارِكْ لِي فِي رِزْقِي</p>
+    <p class="urdu">اے اللہ! میری روزی میں برکت دے</p>
+    <audio controls>
+        <source src="dua_audio_44.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 45: Dua for Peace in the Home -->
+<div class="dua">
+    <h2>دعا گھر میں سکون کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْ بَيْتِي مَلْئِيًا بِالسَّلاَمِ</p>
+    <p class="urdu">اے اللہ! میرے گھر کو سکون سے بھر دے</p>
+    <audio controls>
+        <source src="dua_audio_45.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 46: Dua for Strength to Perform Good Deeds -->
+<div class="dua">
+    <h2>دعا اچھے اعمال کی طاقت کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ قَوِّنِي فِي إِيمَانِي وَأَعْمَالِي</p>
+    <p class="urdu">اے اللہ! مجھے اپنے ایمان اور اعمال پر مضبوط کر دے</p>
+    <audio controls>
+        <source src="dua_audio_46.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 47: Dua for Relief from Debt -->
+<div class="dua">
+    <h2>دعا قرض سے نجات کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ فَرِّجْ عَنِّي دَيْنِي وَاجْعَلْهُ فِي مَفَارِجِهِ</p>
+    <p class="urdu">اے اللہ! میرے قرض کو دور کر اور میرے راستوں میں سہولت دے</p>
+    <audio controls>
+        <source src="dua_audio_47.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 48: Dua for Good Health of Family -->
+<div class="dua">
+    <h2>دعا خاندان کی صحت کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ شِفِّهِمْ وَحَافِظْ عَلَيْهِمْ</p>
+    <p class="urdu">اے اللہ! میرے خاندان کو صحت مند رکھ اور ان کی حفاظت کر</p>
+    <audio controls>
+        <source src="dua_audio_48.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 49: Dua for Success in Work -->
+<div class="dua">
+    <h2>دعا کام میں کامیابی کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ يَسِّرْ لِي أَمْرِي وَفَتَحْ لِي بَابَ النَّجَاحِ</p>
+    <p class="urdu">اے اللہ! میرے کام کو آسان بنا اور کامیابی کے دروازے کھول دے</p>
+    <audio controls>
+        <source src="dua_audio_49.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 50: Dua for Protection from Evil Eye -->
+<div class="dua">
+    <h2>دعا نظر بد سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ إِنِّي أَعُوذُ بِكَ مِنْ شَرِّ عَيْنٍ لَامَّةٍ</p>
+    <p class="urdu">اے اللہ! میں تیری پناہ چاہتا ہوں نظر بد سے</p>
+    <audio controls>
+        <source src="dua_audio_50.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+<!-- Dua 51: Dua for Peaceful Sleep -->
+<div class="dua">
+    <h2>دعا آرام سے نیند کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ قِنِي عَذَابَ النَّارِ وَفِتْنَةَ الْمَحْيَا وَالْمَمَاتِ</p>
+    <p class="urdu">اے اللہ! مجھے عذابِ نار اور زندگی و موت کے فتنے سے بچا</p>
+    <audio controls>
+        <source src="dua_audio_51.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 52: Dua for Relief from Stress -->
+<div class="dua">
+    <h2>دعا ذہنی دباؤ سے نجات کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْ فِي قَلْبِي سَكِينَةً وَفِي نَفْسِي رَاحَةً</p>
+    <p class="urdu">اے اللہ! میرے دل کو سکون اور میری روح کو راحت دے</p>
+    <audio controls>
+        <source src="dua_audio_52.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 53: Dua for Spiritual Cleansing -->
+<div class="dua">
+    <h2>دعا روحانی صفائی کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ طَهِّرْ قَلْبِي وَغَسِّلْهُ مِنَ الذُّنُوبِ</p>
+    <p class="urdu">اے اللہ! میرے دل کو پاک کر اور گناہوں سے دھو دے</p>
+    <audio controls>
+        <source src="dua_audio_53.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 54: Dua for Removing Obstacles -->
+<div class="dua">
+    <h2>دعا رکاوٹوں سے نجات کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ فَرِّجْ عَنَّا وَجْهَتَنَا وَيَسِّرْ لَنَا أَمُورَنَا</p>
+    <p class="urdu">اے اللہ! ہمارے راستوں سے رکاوٹوں کو دور کر دے اور ہمارے کاموں کو آسان کر</p>
+    <audio controls>
+        <source src="dua_audio_54.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 55: Dua for Achieving Good Results -->
+<div class="dua">
+    <h2>دعا اچھے نتائج کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْنَا مِنَ الَّذِينَ يَفْعَلُونَ الْخَيْرَ</p>
+    <p class="urdu">اے اللہ! ہمیں اچھے کام کرنے والوں میں شامل کر</p>
+    <audio controls>
+        <source src="dua_audio_55.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 56: Dua for Protection from Accidents -->
+<div class="dua">
+    <h2>دعا حادثات سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ احْفَظْنَا مِنْ كُلِّ سُوءٍ</p>
+    <p class="urdu">اے اللہ! ہمیں ہر قسم کی برائی سے محفوظ رکھ</p>
+    <audio controls>
+        <source src="dua_audio_56.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 57: Dua for Blessings in Time -->
+<div class="dua">
+    <h2>دعا وقت کی برکت کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْ لِي فِي يَوْمِي هَذَا بَرَكَةً وَخَيْرًا</p>
+    <p class="urdu">اے اللہ! میرے آج کے دن میں برکت اور اچھائی دے</p>
+    <audio controls>
+        <source src="dua_audio_57.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 58: Dua for Successful Relationship -->
+<div class="dua">
+    <h2>دعا کامیاب تعلقات کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْ قَلْبِي وَقَلْبَ شَرِيكِي مُتَفَاهِمَيْنِ</p>
+    <p class="urdu">اے اللہ! میرے اور میرے ساتھی کے درمیان محبت اور سمجھ پیدا کر</p>
+    <audio controls>
+        <source src="dua_audio_58.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 59: Dua for Humility -->
+<div class="dua">
+    <h2>دعا انکساری کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْنِي فِي قَلْبِي مُتَوَاضِعًا لِكُلِّ مَنْ حَوْلِي</p>
+    <p class="urdu">اے اللہ! میرے دل کو سب کے ساتھ انکسار کرنے والا بنا دے</p>
+    <audio controls>
+        <source src="dua_audio_59.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 60: Dua for Guidance in Decisions -->
+<div class="dua">
+    <h2>دعا فیصلوں میں ہدایت کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ رَشِّدْنِي فِي قَرَارَاتِي وَمَواقِفِي</p>
+    <p class="urdu">اے اللہ! میرے فیصلوں اور حالات میں ہدایت دے</p>
+    <audio controls>
+        <source src="dua_audio_60.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+<!-- Dua 61: Dua for Protection from Harm -->
+<div class="dua">
+    <h2>دعا نقصان سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ قِنَا فِتَنَ الدُّنْيَا وَمَا فِيهَا</p>
+    <p class="urdu">اے اللہ! ہمیں دنیا اور اس کے فتنے سے بچا</p>
+    <audio controls>
+        <source src="dua_audio_61.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 62: Dua for Provision of Sustenance -->
+<div class="dua">
+    <h2>دعا رزق کی فراہمی کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ فَتَحْ لِي أَبْوَابَ رَحْمَتِكَ وَرَزْقِكَ</p>
+    <p class="urdu">اے اللہ! مجھے اپنی رحمت اور رزق کے دروازے کھول دے</p>
+    <audio controls>
+        <source src="dua_audio_62.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 63: Dua for Protection of Wealth -->
+<div class="dua">
+    <h2>دعا مال کی حفاظت کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ احْفَظْ لِي مَالِي وَمُدْخَلِي وَمَخْرَجِي</p>
+    <p class="urdu">اے اللہ! میرے مال، آمدنی اور خرچ کو محفوظ رکھ</p>
+    <audio controls>
+        <source src="dua_audio_63.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 64: Dua for Success in Marriage -->
+<div class="dua">
+    <h2>دعا شادی میں کامیابی کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ بَارِكْ فِي زَوْجَتِي وَزَوْجِي</p>
+    <p class="urdu">اے اللہ! میرے شریک حیات کو برکت دے</p>
+    <audio controls>
+        <source src="dua_audio_64.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 65: Dua for Guidance and Clarity -->
+<div class="dua">
+    <h2>دعا ہدایت اور وضاحت کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْنَا فِي صَحِيفَتِي قَائِمِينَ بِمَا تَرْضَى</p>
+    <p class="urdu">اے اللہ! ہمیں اپنے رضا کے کاموں میں کامیاب بنا</p>
+    <audio controls>
+        <source src="dua_audio_65.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 66: Dua for Peace of Mind -->
+<div class="dua">
+    <h2>دعا سکونِ دل کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْ قَلْبِي سَاكِنًا بِذِكْرِكَ</p>
+    <p class="urdu">اے اللہ! میرے دل کو تیرے ذکر سے سکون دے</p>
+    <audio controls>
+        <source src="dua_audio_66.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 67: Dua for Success in Exams -->
+<div class="dua">
+    <h2>دعا امتحانات میں کامیابی کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ فَتَّحْ لِي فِي قَلْبِي عِلْمًا وَفَهْمًا</p>
+    <p class="urdu">اے اللہ! میرے دل کو علم اور سمجھ دے</p>
+    <audio controls>
+        <source src="dua_audio_67.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 68: Dua for Seeking Forgiveness -->
+<div class="dua">
+    <h2>دعا معافی کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ إِنِّي أَسْتَغْفِرُكَ لِذُنُوبِي</p>
+    <p class="urdu">اے اللہ! میں اپنے گناہوں کی معافی چاہتا ہوں</p>
+    <audio controls>
+        <source src="dua_audio_68.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 69: Dua for Protection from Illness -->
+<div class="dua">
+    <h2>دعا بیماری سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ عَافِنِي فِي بَدَنِي وَفِي رُوحِي</p>
+    <p class="urdu">اے اللہ! مجھے جسمانی اور روحانی صحت دے</p>
+    <audio controls>
+        <source src="dua_audio_69.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 70: Dua for Safe Journey -->
+<div class="dua">
+    <h2>دعا سفر کی حفاظت کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ يَسِّرْ لَنَا سَفَرَنَا وَحْدِهِ</p>
+    <p class="urdu">اے اللہ! ہمارے سفر کو آسان بنا دے اور ہمیں تنہا نہ چھوڑ</p>
+    <audio controls>
+        <source src="dua_audio_70.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+<!-- Dua 71: Dua for Protection from Anxiety -->
+<div class="dua">
+    <h2>دعا بے چینی سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْنِي مِنْ مَنْ يَطْمَئِنُّ قَلْبُهُ بِذِكْرِكَ</p>
+    <p class="urdu">اے اللہ! مجھے ان لوگوں میں شامل کر جن کے دل تیرے ذکر سے سکون پاتے ہیں</p>
+    <audio controls>
+        <source src="dua_audio_71.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 72: Dua for Protection from Oppression -->
+<div class="dua">
+    <h2>دعا ظلم سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ إِنِّي أَعُوذُ بِكَ مِنْ كُلِّ ظُلْمٍ</p>
+    <p class="urdu">اے اللہ! میں ہر قسم کے ظلم سے تیری پناہ چاہتا ہوں</p>
+    <audio controls>
+        <source src="dua_audio_72.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 73: Dua for Guidance towards Good Deeds -->
+<div class="dua">
+    <h2>دعا اچھے اعمال کی ہدایت کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْنَا مِنَ الَّذِينَ يَفْعَلُونَ الْخَيْرَ</p>
+    <p class="urdu">اے اللہ! ہمیں اچھے کام کرنے والوں میں شامل کر</p>
+    <audio controls>
+        <source src="dua_audio_73.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 74: Dua for Overcoming Fear -->
+<div class="dua">
+    <h2>دعا خوف سے نجات کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ أَذْهِبْ عَنَّا الْخَوْفَ وَالْفِتْنَةَ</p>
+    <p class="urdu">اے اللہ! ہم سے خوف اور فتنوں کو دور کر دے</p>
+    <audio controls>
+        <source src="dua_audio_74.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 75: Dua for a Good Life -->
+<div class="dua">
+    <h2>دعا اچھے زندگی کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْ لِي فِي حَيَاتِي بَرَكَةً</p>
+    <p class="urdu">اے اللہ! میری زندگی میں برکت ڈال دے</p>
+    <audio controls>
+        <source src="dua_audio_75.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 76: Dua for Reconciliation in Relationships -->
+<div class="dua">
+    <h2>دعا تعلقات کی صلح کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ أَلِّفْ بَيْنَ قُلُوبِ النَّاسِ</p>
+    <p class="urdu">اے اللہ! لوگوں کے دلوں میں ہم آہنگی پیدا کر</p>
+    <audio controls>
+        <source src="dua_audio_76.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 77: Dua for Barakah in Knowledge -->
+<div class="dua">
+    <h2>دعا علم میں برکت کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ فَتَحْ لِي فِي عِلْمِي وَرَحْمَتِكَ</p>
+    <p class="urdu">اے اللہ! میرے علم میں برکت ڈال اور مجھے اپنی رحمت دے</p>
+    <audio controls>
+        <source src="dua_audio_77.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 78: Dua for Protection from the Evil of the Tongue -->
+<div class="dua">
+    <h2>دعا زبان کے برے اثرات سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْ لِي لِسَانًا صَادِقًا وَطِيِّبًا</p>
+    <p class="urdu">اے اللہ! مجھے سچ بولنے والا اور پاک زبان دے</p>
+    <audio controls>
+        <source src="dua_audio_78.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 79: Dua for Forgiveness of Parents -->
+<div class="dua">
+    <h2>دعا والدین کی معافی کے لیے</h2>
+    <p class="arabic">رَبِّ اغْفِرْ لِي وَلِوَالِدَيَّ</p>
+    <p class="urdu">اے میرے رب! مجھے اور میرے والدین کو معاف فرما</p>
+    <audio controls>
+        <source src="dua_audio_79.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 80: Dua for Blessings in Family -->
+<div class="dua">
+    <h2>دعا خاندان میں برکت کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ بَارِكْ فِي عَائِلَتِي</p>
+    <p class="urdu">اے اللہ! میرے خاندان میں برکت دے</p>
+    <audio controls>
+        <source src="dua_audio_80.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 81: Dua for Protection from Fear of Future -->
+<div class="dua">
+    <h2>دعا مستقبل کے خوف سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ أَمِّنِّي فِي مَا يَأْتِي مِنَ الْأَيَّامِ</p>
+    <p class="urdu">اے اللہ! مجھے آنے والے دنوں میں سکون دے</p>
+    <audio controls>
+        <source src="dua_audio_81.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 82: Dua for Good Companionship -->
+<div class="dua">
+    <h2>دعا اچھے ساتھی کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْ لِي صَدِّيقًا وَحَبِيبًا فِي الْحَيَاةِ</p>
+    <p class="urdu">اے اللہ! مجھے دنیا میں اچھا دوست اور ساتھی دے</p>
+    <audio controls>
+        <source src="dua_audio_82.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 83: Dua for Protection from Poverty -->
+<div class="dua">
+    <h2>دعا فقر سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ أَغْنِنِي بِفَضْلِكَ عَنْ فَقْرِك</p>
+    <p class="urdu">اے اللہ! اپنے فضل سے مجھے فقیر ہونے سے بچا</p>
+    <audio controls>
+        <source src="dua_audio_83.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 84: Dua for Protection of Children -->
+<div class="dua">
+    <h2>دعا بچوں کی حفاظت کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ حَفِظْ أَبْنَائِي وَبَنَاتِي</p>
+    <p class="urdu">اے اللہ! میرے بچوں کی حفاظت فرما</p>
+    <audio controls>
+        <source src="dua_audio_84.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 85: Dua for Relief from Illness -->
+<div class="dua">
+    <h2>دعا بیماری سے نجات کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ شِفِّهِمْ وَعَافِهِمْ</p>
+    <p class="urdu">اے اللہ! ان کو صحت مند کر دے اور شفا دے</p>
+    <audio controls>
+        <source src="dua_audio_85.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 86: Dua for Good Endings -->
+<div class="dua">
+    <h2>دعا اچھے اختتام کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْ خَاتِمَتِي خَيْرًا</p>
+    <p class="urdu">اے اللہ! میرے کام کا اچھا خاتمہ کر</p>
+    <audio controls>
+        <source src="dua_audio_86.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 87: Dua for Protection from All Harm -->
+<div class="dua">
+    <h2>دعا ہر قسم کے نقصان سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ إِنِّي أَعُوذُ بِكَ مِنْ كُلِّ سُوءٍ</p>
+    <p class="urdu">اے اللہ! میں ہر قسم کی برائی سے تیری پناہ چاہتا ہوں</p>
+    <audio controls>
+        <source src="dua_audio_87.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 88: Dua for Inner Peace -->
+<div class="dua">
+    <h2>دعا اندرونی سکون کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْ قَلْبِي فِي سَلاَمٍ وَسَكِينَةٍ</p>
+    <p class="urdu">اے اللہ! میرے دل میں سکون اور سکینت دے</p>
+    <audio controls>
+        <source src="dua_audio_88.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 89: Dua for Peaceful Home -->
+<div class="dua">
+    <h2>دعا گھر میں سکون کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْ بَيْتِي مَلْئِيًا بِالسَّلاَمِ</p>
+    <p class="urdu">اے اللہ! میرے گھر کو سکون سے بھر دے</p>
+    <audio controls>
+        <source src="dua_audio_89.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 90: Dua for Seeking Allah's Mercy -->
+<div class="dua">
+    <h2>دعا اللہ کی رحمت کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ ارحمنا برحمتك الواسعة</p>
+    <p class="urdu">اے اللہ! ہمیں اپنی وسیع رحمت سے نواز</p>
+    <audio controls>
+        <source src="dua_audio_90.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 91: Dua for Protection from Jealousy -->
+<div class="dua">
+    <h2>دعا حسد سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ إِنِّي أَعُوذُ بِكَ مِنْ حَسَدِ النَّاسِ</p>
+    <p class="urdu">اے اللہ! میں لوگوں کی حسد سے تیری پناہ چاہتا ہوں</p>
+    <audio controls>
+        <source src="dua_audio_91.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 92: Dua for Protection from Arrogance -->
+<div class="dua">
+    <h2>دعا تکبر سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْنَا مِنَ الْمُتَضَاعِفِينَ فِي صَبْرٍ وَتَوَاضُعٍ</p>
+    <p class="urdu">اے اللہ! ہمیں صبر اور انکساری عطا کر</p>
+    <audio controls>
+        <source src="dua_audio_92.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 93: Dua for Strength in Trials -->
+<div class="dua">
+    <h2>دعا آزمائشوں میں طاقت کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ قَوِّنِي فِي مَا يَأْتِي مِنَ الْمِحَنِ</p>
+    <p class="urdu">اے اللہ! مجھے آزمائشوں میں طاقت دے</p>
+    <audio controls>
+        <source src="dua_audio_93.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 94: Dua for Rest and Comfort -->
+<div class="dua">
+    <h2>دعا آرام اور سکون کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْنِي فِي رَاحَةٍ فِي قَلْبِي</p>
+    <p class="urdu">اے اللہ! میرے دل میں سکون اور آرام دے</p>
+    <audio controls>
+        <source src="dua_audio_94.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 95: Dua for Protection from the Evil of Others -->
+<div class="dua">
+    <h2>دعا دوسروں کی برائی سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْنِي فِي حِمَايَتِكَ</p>
+    <p class="urdu">اے اللہ! مجھے اپنی حفاظت میں رکھ</p>
+    <audio controls>
+        <source src="dua_audio_95.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 96: Dua for a Good Heart -->
+<div class="dua">
+    <h2>دعا دل کی صفائی کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ طَهِّرْ قَلْبِي وَنَفْسِي</p>
+    <p class="urdu">اے اللہ! میرے دل اور جان کو صاف کر</p>
+    <audio controls>
+        <source src="dua_audio_96.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 97: Dua for Help in Difficult Times -->
+<div class="dua">
+    <h2>دعا مشکل حالات میں مدد کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ أَعِنِّي فِي صُعُودِ دُنيايِي</p>
+    <p class="urdu">اے اللہ! میری دنیا کے مشکلات میں مدد کر</p>
+    <audio controls>
+        <source src="dua_audio_97.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 98: Dua for Relief from Grief -->
+<div class="dua">
+    <h2>دعا غم سے نجات کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ إِنِّي أَعُوذُ بِكَ مِنْ الْحُزْنِ وَالْكَرَبِ</p>
+    <p class="urdu">اے اللہ! میں غم اور پریشانی سے تیری پناہ چاہتا ہوں</p>
+    <audio controls>
+        <source src="dua_audio_98.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 99: Dua for Protection from All Evil -->
+<div class="dua">
+    <h2>دعا ہر برائی سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ إِنِّي أَعُوذُ بِكَ مِنْ شَرِّ مَا خَلَقْتَ</p>
+    <p class="urdu">اے اللہ! میں تیری پناہ چاہتا ہوں ہر برائی سے</p>
+    <audio controls>
+        <source src="dua_audio_99.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 100: Dua for Contentment -->
+<div class="dua">
+    <h2>دعا رضائے قلب کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ رَاضِّنِي فِي مَا قَضَيْتَ لِي</p>
+    <p class="urdu">اے اللہ! جو کچھ تونے میرے لیے مقدر کیا، اس سے راضی کر دے</p>
+    <audio controls>
+        <source src="dua_audio_100.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 101: Dua for Overcoming Difficulties -->
+<div class="dua">
+    <h2>دعا مشکلات پر قابو پانے کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ إِنِّي أَعُوذُ بِكَ مِنْ جَمِيعِ مَا يَحْتَسِبُ فِي حَيَاتِي</p>
+    <p class="urdu">اے اللہ! مجھے زندگی کی تمام مشکلات سے بچا</p>
+    <audio controls>
+        <source src="dua_audio_101.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 102: Dua for Overcoming Weakness -->
+<div class="dua">
+    <h2>دعا کمزوری سے نجات کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ قَوِّنِي فِي مَا لَا قُوَّةَ لِي فِيهِ</p>
+    <p class="urdu">اے اللہ! مجھے اپنی طاقت سے مدد دے جب مجھے کمزوری محسوس ہو</p>
+    <audio controls>
+        <source src="dua_audio_102.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 103: Dua for Protection from Bad Thoughts -->
+<div class="dua">
+    <h2>دعا برے خیالات سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ جَنِّبْنِي فِكْرَ الشَّرِّ وَالسَّوءِ</p>
+    <p class="urdu">اے اللہ! مجھے برے خیالات اور برائیوں سے بچا</p>
+    <audio controls>
+        <source src="dua_audio_103.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 104: Dua for Protection from Poverty -->
+<div class="dua">
+    <h2>دعا فقر سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ أَغْنِنِي بِرَحْمَتِكَ عَنْ فَقْرِك</p>
+    <p class="urdu">اے اللہ! مجھے اپنی رحمت سے فقیر ہونے سے بچا</p>
+    <audio controls>
+        <source src="dua_audio_104.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 105: Dua for Relief from Debt -->
+<div class="dua">
+    <h2>دعا قرض سے نجات کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ قَرِّبْنِي فِي سَدِّ دَيْنِي</p>
+    <p class="urdu">اے اللہ! میرے قرض کو دور کر دے اور اسے آسان بنا دے</p>
+    <audio controls>
+        <source src="dua_audio_105.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 106: Dua for Relief from Worries -->
+<div class="dua">
+    <h2>دعا پریشانی سے نجات کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْنِي مِنَ الَّذِينَ يَسْتَحِقُّونَ رَحْمَتَكَ</p>
+    <p class="urdu">اے اللہ! مجھے اپنی رحمت سے شامل کر اور پریشانیوں سے نکال</p>
+    <audio controls>
+        <source src="dua_audio_106.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 107: Dua for Success in Business -->
+<div class="dua">
+    <h2>دعا کاروبار میں کامیابی کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ بَارِكْ فِي رِزْقِي وَأَعْمَالِي</p>
+    <p class="urdu">اے اللہ! میری روزی اور کاموں میں برکت دے</p>
+    <audio controls>
+        <source src="dua_audio_107.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 108: Dua for Guidance in Life -->
+<div class="dua">
+    <h2>دعا زندگی کی رہنمائی کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ رَشِّدْنِي فِي خُطُوَاتِي</p>
+    <p class="urdu">اے اللہ! مجھے زندگی کے راستوں میں ہدایت دے</p>
+    <audio controls>
+        <source src="dua_audio_108.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 109: Dua for Seeking Protection from All Diseases -->
+<div class="dua">
+    <h2>دعا تمام بیماریوں سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ حَافِظْنَا مِنَ الْمَرَضِ وَالْبَلَاءِ</p>
+    <p class="urdu">اے اللہ! ہمیں بیماریوں اور آفات سے محفوظ رکھ</p>
+    <audio controls>
+        <source src="dua_audio_109.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 110: Dua for Protection from Sickness -->
+<div class="dua">
+    <h2>دعا بیماری سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ شِفِّنِي وَعَافِنِي مِنَ الْمَرَضِ</p>
+    <p class="urdu">اے اللہ! مجھے بیماری سے شفا دے اور مجھے صحت مند رکھ</p>
+    <audio controls>
+        <source src="dua_audio_110.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 111: Dua for Patience in Hardships -->
+<div class="dua">
+    <h2>دعا مشکلات میں صبر کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ وَفِّقْنِي لِصَبْرٍ فِي تِلْكَ الْمُحْنَاتِ</p>
+    <p class="urdu">اے اللہ! مجھے ان مشکلات میں صبر دے</p>
+    <audio controls>
+        <source src="dua_audio_111.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 112: Dua for Successful Relationships -->
+<div class="dua">
+    <h2>دعا کامیاب تعلقات کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْ بَيْنِي وَبَيْنَ أَحَبَّائِي وَأَصْدِقَائِي وُدًّا</p>
+    <p class="urdu">اے اللہ! میرے عزیزوں اور دوستوں کے درمیان محبت بڑھا دے</p>
+    <audio controls>
+        <source src="dua_audio_112.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 113: Dua for Protection from Anger -->
+<div class="dua">
+    <h2>دعا غصے سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ إِنِّي أَعُوذُ بِكَ مِنَ غَضَبِك</p>
+    <p class="urdu">اے اللہ! میں تیرے غصے سے تیری پناہ چاہتا ہوں</p>
+    <audio controls>
+        <source src="dua_audio_113.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 114: Dua for Ease in Every Task -->
+<div class="dua">
+    <h2>دعا ہر کام میں آسانی کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ يَسِّرْ لِي كُلَّ أَمْرٍ فِي حَيَاتِي</p>
+    <p class="urdu">اے اللہ! میری زندگی کے ہر کام کو آسان بنا دے</p>
+    <audio controls>
+        <source src="dua_audio_114.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 115: Dua for Success in Efforts -->
+<div class="dua">
+    <h2>دعا کوششوں میں کامیابی کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ بَارِكْ فِي سَعْيِي وَفِي جُهُودِي</p>
+    <p class="urdu">اے اللہ! میری محنت اور کوششوں میں برکت ڈال</p>
+    <audio controls>
+        <source src="dua_audio_115.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 116: Dua for Mercy of Allah -->
+<div class="dua">
+    <h2>دعا اللہ کی رحمت کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ ارحمنا برحمتِک الواسعہ</p>
+    <p class="urdu">اے اللہ! ہمیں اپنی وسیع رحمت سے نواز</p>
+    <audio controls>
+        <source src="dua_audio_116.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 117: Dua for Protection from the Evil Eye -->
+<div class="dua">
+    <h2>دعا نظرِ بد سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ أَعُوذُ بِكَ مِنْ شَرِّ حَاسِدٍ إِذَا حَسَدَ</p>
+    <p class="urdu">اے اللہ! میں حسد کرنے والے کی برائی سے تیری پناہ چاہتا ہوں</p>
+    <audio controls>
+        <source src="dua_audio_117.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 118: Dua for Finding True Love -->
+<div class="dua">
+    <h2>دعا سچی محبت کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْ فِي قَلْبِي مَحَبَّةً صَادِقَةً لِكُلِّ مَنْ حَوْلِي</p>
+    <p class="urdu">اے اللہ! میرے دل میں سچی محبت ڈال دے اور اسے میرے اطراف کے لوگوں تک پہنچا</p>
+    <audio controls>
+        <source src="dua_audio_118.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 119: Dua for Blessings in Children -->
+<div class="dua">
+    <h2>دعا بچوں میں برکت کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ بَارِكْ فِي أَبْنَائِي وَبَنَاتِي</p>
+    <p class="urdu">اے اللہ! میرے بچوں میں برکت ڈال دے</p>
+    <audio controls>
+        <source src="dua_audio_119.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 120: Dua for Protection from Misfortune -->
+<div class="dua">
+    <h2>دعا بدقسمتی سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ إِنِّي أَعُوذُ بِكَ مِنَ كُلِّ سُوءٍ وَمِنْ فَجْأَةِ النِّقْمَةِ</p>
+    <p class="urdu">اے اللہ! میں ہر برائی اور ناگہانی مصیبت سے تیری پناہ چاہتا ہوں</p>
+    <audio controls>
+        <source src="dua_audio_120.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 121: Dua for Protection from Diseases -->
+<div class="dua">
+    <h2>دعا بیماریوں سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ عَافِنَا فِي أَجْسَادِنَا وَفِي أَرْوَاحِنَا</p>
+    <p class="urdu">اے اللہ! ہمیں جسمانی اور روحانی صحت عطا کر</p>
+    <audio controls>
+        <source src="dua_audio_121.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 122: Dua for Clarity of Thought -->
+<div class="dua">
+    <h2>دعا خیالات کی وضاحت کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ نَوِّرْ لِي قَلْبِي وَفَكِّرْ لِي فِي أَمُورِي</p>
+    <p class="urdu">اے اللہ! میرے دل کو روشن کر اور میرے کاموں میں فہم دے</p>
+    <audio controls>
+        <source src="dua_audio_122.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 123: Dua for Overcoming Depression -->
+<div class="dua">
+    <h2>دعا افسردگی سے نجات کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ أَذْهِبْ عَنِّي الْحُزْنَ وَالْكَرَبَ</p>
+    <p class="urdu">اے اللہ! میرے غم اور پریشانی کو دور کر دے</p>
+    <audio controls>
+        <source src="dua_audio_123.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 124: Dua for Protection from Sins -->
+<div class="dua">
+    <h2>دعا گناہوں سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْنِبْنِي فِي مَا تَعَارَضُ مَعَكِ</p>
+    <p class="urdu">اے اللہ! مجھے گناہوں سے بچا</p>
+    <audio controls>
+        <source src="dua_audio_124.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 125: Dua for Blessings in Sustenance -->
+<div class="dua">
+    <h2>دعا روزی میں برکت کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ بَارِكْ فِي رِزْقِي وَيَسِّرْهُ لِي</p>
+    <p class="urdu">اے اللہ! میری روزی میں برکت ڈال اور اسے آسان بنا دے</p>
+    <audio controls>
+        <source src="dua_audio_125.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 126: Dua for Protection from the Fire of Hell -->
+<div class="dua">
+    <h2>دعا جہنم کے عذاب سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ أَعُوذُ بِكَ مِنْ عَذَابِ النَّارِ</p>
+    <p class="urdu">اے اللہ! میں جہنم کے عذاب سے تیری پناہ چاہتا ہوں</p>
+    <audio controls>
+        <source src="dua_audio_126.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 127: Dua for Blessing in Marriage -->
+<div class="dua">
+    <h2>دعا شادی میں برکت کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ بَارِكْ فِي زَوْجَتِي وَزَوْجِي</p>
+    <p class="urdu">اے اللہ! میرے شریک حیات میں برکت ڈال دے</p>
+    <audio controls>
+        <source src="dua_audio_127.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 128: Dua for Gratitude and Thankfulness -->
+<div class="dua">
+    <h2>دعا شکرگزاری کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْنِي مِنَ الشَّاكِرِينَ لَكِ</p>
+    <p class="urdu">اے اللہ! مجھے تیرا شکر گزار بنا</p>
+    <audio controls>
+        <source src="dua_audio_128.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 129: Dua for Purification of the Soul -->
+<div class="dua">
+    <h2>دعا نفس کی صفائی کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ طَهِّرْ قَلْبِي وَنَفْسِي</p>
+    <p class="urdu">اے اللہ! میرے دل اور نفس کو پاک کر دے</p>
+    <audio controls>
+        <source src="dua_audio_129.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 130: Dua for Protection from Discontent -->
+<div class="dua">
+    <h2>دعا عدم اطمینان سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْنِي رَاضِيًا بِمَا قَضَيْتَ لِي</p>
+    <p class="urdu">اے اللہ! جو کچھ تونے میرے لیے مقدر کیا، اس سے راضی کر دے</p>
+    <audio controls>
+        <source src="dua_audio_130.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 131: Dua for Protection from the Evil of People -->
+<div class="dua">
+    <h2>دعا لوگوں کی برائی سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ إِنِّي أَعُوذُ بِكَ مِنْ شَرِّ النَّاسِ</p>
+    <p class="urdu">اے اللہ! میں لوگوں کی برائی سے تیری پناہ چاہتا ہوں</p>
+    <audio controls>
+        <source src="dua_audio_131.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 132: Dua for Protection from Envy -->
+<div class="dua">
+    <h2>دعا حسد سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ إِنِّي أَعُوذُ بِكَ مِنْ حَسَدِ النَّاسِ</p>
+    <p class="urdu">اے اللہ! میں لوگوں کی حسد سے تیری پناہ چاہتا ہوں</p>
+    <audio controls>
+        <source src="dua_audio_132.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 133: Dua for Protection from Evil Actions -->
+<div class="dua">
+    <h2>دعا برے اعمال سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ إِنِّي أَعُوذُ بِكَ مِنْ كُلِّ سُوءٍ</p>
+    <p class="urdu">اے اللہ! میں ہر برائی سے تیری پناہ چاہتا ہوں</p>
+    <audio controls>
+        <source src="dua_audio_133.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 134: Dua for Forgiveness from Allah -->
+<div class="dua">
+    <h2>دعا اللہ سے مغفرت کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اغْفِرْ لِي وَارْحَمْنِي</p>
+    <p class="urdu">اے اللہ! میری مغفرت کر اور مجھ پر رحم کر</p>
+    <audio controls>
+        <source src="dua_audio_134.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 135: Dua for Peace of Mind -->
+<div class="dua">
+    <h2>دعا ذہنی سکون کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْ قَلْبِي فِي سَلاَمٍ وَسَكِينَةٍ</p>
+    <p class="urdu">اے اللہ! میرے دل میں سکون اور سکینت ڈال دے</p>
+    <audio controls>
+        <source src="dua_audio_135.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 136: Dua for Good Health -->
+<div class="dua">
+    <h2>دعا صحت کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ شِفِّنِي وَعَافِنِي</p>
+    <p class="urdu">اے اللہ! مجھے صحت مند کر دے اور مجھے عافیت دے</p>
+    <audio controls>
+        <source src="dua_audio_136.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 137: Dua for Good Decision Making -->
+<div class="dua">
+    <h2>دعا اچھے فیصلوں کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ رَشِّدْنِي فِي مَواقِفِ حَيَاتِي</p>
+    <p class="urdu">اے اللہ! میری زندگی کے فیصلوں میں رہنمائی کر</p>
+    <audio controls>
+        <source src="dua_audio_137.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 138: Dua for Protection from Evil Deeds -->
+<div class="dua">
+    <h2>دعا برے اعمال سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْنِبْنِي فِي مَا يَرْضِي لَكَ</p>
+    <p class="urdu">اے اللہ! مجھے ایسے اعمال سے بچا جو تیرے لیے ناپسندیدہ ہوں</p>
+    <audio controls>
+        <source src="dua_audio_138.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 139: Dua for Provision of Sustenance -->
+<div class="dua">
+    <h2>دعا رزق کی فراہمی کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ سَعِّدْنِي فِي رِزْقِي وَيَسِّرْهُ لِي</p>
+    <p class="urdu">اے اللہ! میری روزی کو خوشحال اور آسان بنا دے</p>
+    <audio controls>
+        <source src="dua_audio_139.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 140: Dua for Protection from Anxiety -->
+<div class="dua">
+    <h2>دعا پریشانی سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحُزْنِ</p>
+    <p class="urdu">اے اللہ! میں پریشانی اور غم سے تیری پناہ چاہتا ہوں</p>
+    <audio controls>
+        <source src="dua_audio_140.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 141: Dua for Protection from the Dangers of the Day -->
+<div class="dua">
+    <h2>دعا دن کی مشکلات سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ إِنِّي أَعُوذُ بِكَ مِنْ شَرِّ مَا يَأْتِي بِهِ النَّهَارُ</p>
+    <p class="urdu">اے اللہ! میں دن کی مشکلات سے تیری پناہ چاہتا ہوں</p>
+    <audio controls>
+        <source src="dua_audio_141.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 142: Dua for Protection from the Night's Dangers -->
+<div class="dua">
+    <h2>دعا رات کی مشکلات سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ إِنِّي أَعُوذُ بِكَ مِنْ شَرِّ مَا تَحْمِلُهُ اللَّيْلَةُ</p>
+    <p class="urdu">اے اللہ! میں رات کی برائیوں سے تیری پناہ چاہتا ہوں</p>
+    <audio controls>
+        <source src="dua_audio_142.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 143: Dua for Protection from Hypocrisy -->
+<div class="dua">
+    <h2>دعا نفاق سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْنِبْنِي النِّفَاقَ وَمَا فِيهِ</p>
+    <p class="urdu">اے اللہ! مجھے نفاق سے بچا</p>
+    <audio controls>
+        <source src="dua_audio_143.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 144: Dua for Protection from Pride -->
+<div class="dua">
+    <h2>دعا تکبر سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْنِي فِي تَوَاضُعٍ وَفِي صَبْرٍ</p>
+    <p class="urdu">اے اللہ! مجھے عاجزی اور صبر دے</p>
+    <audio controls>
+        <source src="dua_audio_144.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 145: Dua for Protection from Weakness -->
+<div class="dua">
+    <h2>دعا کمزوری سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ قَوِّنِي فِي كُلِّ مَجْلِسٍ وَمَحْنَةٍ</p>
+    <p class="urdu">اے اللہ! مجھے ہر مشکل اور حالات میں طاقت دے</p>
+    <audio controls>
+        <source src="dua_audio_145.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 146: Dua for Forgiveness of Sins -->
+<div class="dua">
+    <h2>دعا گناہوں کی معافی کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اغْفِرْ لِي ذُنُوبِي وَارْحَمْنِي</p>
+    <p class="urdu">اے اللہ! میرے گناہوں کو معاف کر دے اور مجھ پر رحم کر</p>
+    <audio controls>
+        <source src="dua_audio_146.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 147: Dua for Peace of Heart -->
+<div class="dua">
+    <h2>دعا دل کے سکون کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْ قَلْبِي فِي سَلاَمٍ وَحَيَاةٍ</p>
+    <p class="urdu">اے اللہ! میرے دل میں سکون اور زندگی دے</p>
+    <audio controls>
+        <source src="dua_audio_147.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 148: Dua for Protection from Calamities -->
+<div class="dua">
+    <h2>دعا آفات سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْنِبْنِي كُلَّ فَجْأَةٍ وَمُنَكَرَةٍ</p>
+    <p class="urdu">اے اللہ! مجھے آفات اور غیر متوقع مشکلات سے بچا</p>
+    <audio controls>
+        <source src="dua_audio_148.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 149: Dua for Protection from Disbelief -->
+<div class="dua">
+    <h2>دعا کفر سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْنِبْنِي فِتْنَةَ الْمُحْرِفِينَ</p>
+    <p class="urdu">اے اللہ! مجھے کفر اور فتنہ سے بچا</p>
+    <audio controls>
+        <source src="dua_audio_149.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 150: Dua for the Blessing of Children -->
+<div class="dua">
+    <h2>دعا بچوں کی برکت کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ بَارِكْ فِي أَبْنَائِي وَبَنَاتِي</p>
+    <p class="urdu">اے اللہ! میرے بچوں میں برکت ڈال</p>
+    <audio controls>
+        <source src="dua_audio_150.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 151: Dua for Protection from Oppression -->
+<div class="dua">
+    <h2>دعا ظلم سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ إِنِّي أَعُوذُ بِكَ مِنْ جَورِ الظَّالِمِينَ</p>
+    <p class="urdu">اے اللہ! میں ظالموں کے ظلم سے تیری پناہ چاہتا ہوں</p>
+    <audio controls>
+        <source src="dua_audio_151.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 152: Dua for Safe Travel -->
+<div class="dua">
+    <h2>دعا سفر کی حفاظت کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ إِنِّي أَعُوذُ بِكَ مِنْ مَخَاوِفِ السَّفَرِ</p>
+    <p class="urdu">اے اللہ! میں سفر کی تمام پریشانیوں سے تیری پناہ چاہتا ہوں</p>
+    <audio controls>
+        <source src="dua_audio_152.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 153: Dua for the Well-being of the Family -->
+<div class="dua">
+    <h2>دعا خاندان کی خیریت کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْ عَائِلَتِي فِي رَحْمَتِك</p>
+    <p class="urdu">اے اللہ! میرے خاندان کو اپنی رحمت سے نواز</p>
+    <audio controls>
+        <source src="dua_audio_153.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 154: Dua for Wisdom and Knowledge -->
+<div class="dua">
+    <h2>دعا حکمت اور علم کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ فَتِّحْ لِي أَبْوَابَ الْعِلْمِ وَالْحِكْمَةِ</p>
+    <p class="urdu">اے اللہ! مجھے علم اور حکمت کے دروازے کھول دے</p>
+    <audio controls>
+        <source src="dua_audio_154.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 155: Dua for Good Character -->
+<div class="dua">
+    <h2>دعا اچھے کردار کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ حَسِّنْ خُلُقِي وَجَمِيلِي</p>
+    <p class="urdu">اے اللہ! میرے اخلاق اور شخصیت کو بہتر بنا</p>
+    <audio controls>
+        <source src="dua_audio_155.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 156: Dua for Ease in Death -->
+<div class="dua">
+    <h2>دعا موت میں آسانی کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ جَعَلْنِي فِي فَجْوَاتِ السَّلَامِ</p>
+    <p class="urdu">اے اللہ! میری موت کو سکون اور آسان بنا دے</p>
+    <audio controls>
+        <source src="dua_audio_156.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 157: Dua for Protection from Betrayal -->
+<div class="dua">
+    <h2>دعا دھوکہ دہی سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ حَافِظْنِي مِنْ غَدْرِ النَّاسِ</p>
+    <p class="urdu">اے اللہ! مجھے لوگوں کی دھوکہ دہی سے بچا</p>
+    <audio controls>
+        <source src="dua_audio_157.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 158: Dua for Sincerity in Worship -->
+<div class="dua">
+    <h2>دعا عبادت میں اخلاص کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْنِي مِنَ الصَّادِقِينَ فِي عِبَادَتِكَ</p>
+    <p class="urdu">اے اللہ! مجھے اپنی عبادت میں اخلاص عطا کر</p>
+    <audio controls>
+        <source src="dua_audio_158.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 159: Dua for Protection from Unseen Dangers -->
+<div class="dua">
+    <h2>دعا چھپی ہوئی خطرات سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ إِنِّي أَعُوذُ بِكَ مِنْ كُلِّ خَفِيٍّ وَمَكْرُ</p>
+    <p class="urdu">اے اللہ! میں ہر چھپی ہوئی برائی سے تیری پناہ چاہتا ہوں</p>
+    <audio controls>
+        <source src="dua_audio_159.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 160: Dua for Success in the Hereafter -->
+<div class="dua">
+    <h2>دعا آخرت میں کامیابی کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْنَا مِنَ النَّاجِينَ فِي الْآخِرَةِ</p>
+    <p class="urdu">اے اللہ! ہمیں آخرت میں کامیاب بنا</p>
+    <audio controls>
+        <source src="dua_audio_160.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 161: Dua for Protection from All Harm -->
+<div class="dua">
+    <h2>دعا ہر قسم کے نقصان سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ إِنِّي أَعُوذُ بِكَ مِنْ كُلِّ ضَرَرٍ وَفِتْنَةٍ</p>
+    <p class="urdu">اے اللہ! میں ہر نقصان اور فتنے سے تیری پناہ چاہتا ہوں</p>
+    <audio controls>
+        <source src="dua_audio_161.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 162: Dua for Sustenance and Provision -->
+<div class="dua">
+    <h2>دعا رزق کی فراہمی کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ رَزِقْنِي مِنْ حَيْثُ لَا أَحْتَسِبُ</p>
+    <p class="urdu">اے اللہ! مجھے ایسے رزق دے جہاں سے میں توقع نہ کروں</p>
+    <audio controls>
+        <source src="dua_audio_162.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 163: Dua for Protection from Sickness -->
+<div class="dua">
+    <h2>دعا بیماری سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ شِفِّنِي وَعَافِنِي</p>
+    <p class="urdu">اے اللہ! مجھے صحت مند کر دے اور بیماریوں سے بچا</p>
+    <audio controls>
+        <source src="dua_audio_163.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 164: Dua for Protection from the Evil of the Day -->
+<div class="dua">
+    <h2>دعا دن کے شر سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ إِنِّي أَعُوذُ بِكَ مِنْ شَرِّ مَا يَأْتِي بِهِ النَّهَارُ</p>
+    <p class="urdu">اے اللہ! میں دن کے شر سے تیری پناہ چاہتا ہوں</p>
+    <audio controls>
+        <source src="dua_audio_164.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 165: Dua for Good Sleep -->
+<div class="dua">
+    <h2>دعا اچھی نیند کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ جَنِّبْنِي فِتْنَةَ النَّوْمِ</p>
+    <p class="urdu">اے اللہ! مجھے نیند کی فتنے سے بچا</p>
+    <audio controls>
+        <source src="dua_audio_165.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 166: Dua for Parents' Blessings -->
+<div class="dua">
+    <h2>دعا والدین کی دعاؤں کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْ أَبَائِي وَأُمَّي فِي رَحْمَتِك</p>
+    <p class="urdu">اے اللہ! میرے والدین کو اپنی رحمت میں شامل کر</p>
+    <audio controls>
+        <source src="dua_audio_166.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 167: Dua for Protection from Laziness -->
+<div class="dua">
+    <h2>دعا سستی سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْنِبْنِي سُوءَ التَّكَلُّفِ وَالْخُمُودِ</p>
+    <p class="urdu">اے اللہ! مجھے سستی اور ناکامی سے بچا</p>
+    <audio controls>
+        <source src="dua_audio_167.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 168: Dua for Success in Business -->
+<div class="dua">
+    <h2>دعا کاروبار میں کامیابی کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ بَارِكْ فِي رِزْقِي وَفِي جُهُودِي</p>
+    <p class="urdu">اے اللہ! میرے کاروبار میں برکت ڈال اور میری محنت کامیاب کر</p>
+    <audio controls>
+        <source src="dua_audio_168.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 169: Dua for Protection from Bad Company -->
+<div class="dua">
+    <h2>دعا برے دوستوں سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْنِبْنِي رِجَالَ السُّوءِ وَمُصَاحَبَتِهِمْ</p>
+    <p class="urdu">اے اللہ! مجھے برے لوگوں کی صحبت سے بچا</p>
+    <audio controls>
+        <source src="dua_audio_169.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 170: Dua for Success in the Hereafter -->
+<div class="dua">
+    <h2>دعا آخرت میں کامیابی کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْنَا مِنَ النَّاجِينَ فِي الْآخِرَةِ</p>
+    <p class="urdu">اے اللہ! ہمیں آخرت میں کامیاب بنا</p>
+    <audio controls>
+        <source src="dua_audio_170.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 171: Dua for Protection from Grief -->
+<div class="dua">
+    <h2>دعا غم سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ أَذْهِبْ عَنِّي الْحُزْنَ وَالْكَآبَةَ</p>
+    <p class="urdu">اے اللہ! میرے غم اور افسردگی کو دور کر دے</p>
+    <audio controls>
+        <source src="dua_audio_171.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 172: Dua for Inner Peace -->
+<div class="dua">
+    <h2>دعا دل کے سکون کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْ قَلْبِي فِي سَلاَمٍ وَحَيَاةٍ</p>
+    <p class="urdu">اے اللہ! میرے دل میں سکون اور سکینت ڈال دے</p>
+    <audio controls>
+        <source src="dua_audio_172.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 173: Dua for Prosperity -->
+<div class="dua">
+    <h2>دعا کامیابی کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ بَارِكْ فِي رِزْقِي وَحَيَاتِي</p>
+    <p class="urdu">اے اللہ! میری روزی اور زندگی میں برکت ڈال دے</p>
+    <audio controls>
+        <source src="dua_audio_173.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 174: Dua for Good Health and Strength -->
+<div class="dua">
+    <h2>دعا صحت اور طاقت کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ قَوِّي جَسَدِي وَصِحَّتِي</p>
+    <p class="urdu">اے اللہ! میرے جسم اور صحت کو طاقت دے</p>
+    <audio controls>
+        <source src="dua_audio_174.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 175: Dua for Happiness -->
+<div class="dua">
+    <h2>دعا خوشی کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْنِي مِنَ السُّعَدَاءِ</p>
+    <p class="urdu">اے اللہ! مجھے خوشیوں کا حصہ بنا</p>
+    <audio controls>
+        <source src="dua_audio_175.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 176: Dua for Success in Life -->
+<div class="dua">
+    <h2>دعا زندگی میں کامیابی کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ تَوَفَّقْنِي فِي كُلِّ عَمَلٍ صَالِحٍ</p>
+    <p class="urdu">اے اللہ! مجھے ہر اچھے عمل میں کامیابی دے</p>
+    <audio controls>
+        <source src="dua_audio_176.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 177: Dua for Protection from Financial Hardship -->
+<div class="dua">
+    <h2>دعا مالی مشکلات سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْنِبْنِي فَاقَتِهِمْ وَفَقْرَهمْ</p>
+    <p class="urdu">اے اللہ! مجھے ان کی فقیری اور مالی مشکلات سے بچا</p>
+    <audio controls>
+        <source src="dua_audio_177.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 178: Dua for the Blessing of Knowledge -->
+<div class="dua">
+    <h2>دعا علم کی برکت کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ وَفِّقْنِي لِمَا يَرْضِيكَ فِي عِلْمِي</p>
+    <p class="urdu">اے اللہ! مجھے علم میں کامیابی اور برکت دے</p>
+    <audio controls>
+        <source src="dua_audio_178.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 179: Dua for Protection from Harmful Thoughts -->
+<div class="dua">
+    <h2>دعا برے خیالات سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ طَهِّرْ قَلْبِي وَفَكْرِي</p>
+    <p class="urdu">اے اللہ! میرے دل اور خیالات کو صاف کر دے</p>
+    <audio controls>
+        <source src="dua_audio_179.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 180: Dua for Guidance to the Right Path -->
+<div class="dua">
+    <h2>دعا سیدھی راہ کی رہنمائی کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اهدِنِي فِي رَجْعِي إِلَىٰ صِرَاطِكَ الْمُسْتَقِيمِ</p>
+    <p class="urdu">اے اللہ! مجھے اپنی سیدھی راہ کی رہنمائی دے</p>
+    <audio controls>
+        <source src="dua_audio_180.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 181: Dua for Protection from Evil Deeds -->
+<div class="dua">
+    <h2>دعا برے اعمال سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ إِنِّي أَعُوذُ بِكَ مِنْ سَيِّئَاتِ أَعْمَالِ</p>
+    <p class="urdu">اے اللہ! میں برے اعمال سے تیری پناہ چاہتا ہوں</p>
+    <audio controls>
+        <source src="dua_audio_181.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 182: Dua for Peace in Family -->
+<div class="dua">
+    <h2>دعا خاندان میں سکون کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْ أُسْرَتِي فِي رَحْمَتِك</p>
+    <p class="urdu">اے اللہ! میرے خاندان کو اپنی رحمت سے نواز</p>
+    <audio controls>
+        <source src="dua_audio_182.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 183: Dua for Good Friends -->
+<div class="dua">
+    <h2>دعا اچھے دوستوں کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْ أَصْحَابِي صَدِّيقِينَ وَرَحِيمِينَ</p>
+    <p class="urdu">اے اللہ! میرے دوستوں کو سچائی اور رحم سے بھر دے</p>
+    <audio controls>
+        <source src="dua_audio_183.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 184: Dua for Guidance in Life -->
+<div class="dua">
+    <h2>دعا زندگی میں رہنمائی کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْنِي فِي هِدَايَتِك وَرَحْمَتِك</p>
+    <p class="urdu">اے اللہ! مجھے اپنی ہدایت اور رحمت عطا کر</p>
+    <audio controls>
+        <source src="dua_audio_184.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 185: Dua for Protection from Arrogance -->
+<div class="dua">
+    <h2>دعا تکبر سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْنِبْنِي الْكِبْرَ وَالْفَخْرَ</p>
+    <p class="urdu">اے اللہ! مجھے تکبر اور فخر سے بچا</p>
+    <audio controls>
+        <source src="dua_audio_185.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 186: Dua for Blessings in Wealth -->
+<div class="dua">
+    <h2>دعا دولت میں برکت کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ بَارِكْ فِي مَالِي وَرَزْقِي</p>
+    <p class="urdu">اے اللہ! میرے مال اور روزی میں برکت ڈال دے</p>
+    <audio controls>
+        <source src="dua_audio_186.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 187: Dua for Protection from Failure -->
+<div class="dua">
+    <h2>دعا ناکامی سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْنِبْنِي الْفَشَلَ وَالْخَسَارَةَ</p>
+    <p class="urdu">اے اللہ! مجھے ناکامی اور نقصان سے بچا</p>
+    <audio controls>
+        <source src="dua_audio_187.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 188: Dua for Protection from Depression -->
+<div class="dua">
+    <h2>دعا افسردگی سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ أَذْهِبْ عَنِّي الْحُزْنَ وَالْكَرَبَ</p>
+    <p class="urdu">اے اللہ! میرے غم اور پریشانی کو دور کر دے</p>
+    <audio controls>
+        <source src="dua_audio_188.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 189: Dua for Strengthening the Faith -->
+<div class="dua">
+    <h2>دعا ایمان کو مضبوط کرنے کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ ثَبِّتْنِي عَلَى الْإِيمَانِ</p>
+    <p class="urdu">اے اللہ! مجھے ایمان پر ثابت قدم رکھ</p>
+    <audio controls>
+        <source src="dua_audio_189.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 190: Dua for Relief from Worries -->
+<div class="dua">
+    <h2>دعا پریشانیوں سے نجات کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ فَرِّجْ عَنِّي هَمِّي وَغَمِّي</p>
+    <p class="urdu">اے اللہ! میری پریشانیوں اور غموں کو دور کر دے</p>
+    <audio controls>
+        <source src="dua_audio_190.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 191: Dua for Protection from Enemies -->
+<div class="dua">
+    <h2>دعا دشمنوں سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْنِي فِي رِعَايَتِكَ وَحِفْظِكَ</p>
+    <p class="urdu">اے اللہ! مجھے اپنے تحفظ اور نگہبانی میں رکھ</p>
+    <audio controls>
+        <source src="dua_audio_191.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 192: Dua for Protection from Evil Eyes -->
+<div class="dua">
+    <h2>دعا نظر بد سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ إِنِّي أَعُوذُ بِكَ مِنْ حَسَدِ النَّاسِ</p>
+    <p class="urdu">اے اللہ! میں لوگوں کی نظر بد سے تیری پناہ چاہتا ہوں</p>
+    <audio controls>
+        <source src="dua_audio_192.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 193: Dua for Protection from Hardships -->
+<div class="dua">
+    <h2>دعا مشکلات سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْنِي فِي رَحْمَتِك فِي كُلِّ مُحْنَةٍ</p>
+    <p class="urdu">اے اللہ! مجھے ہر مشکل میں اپنی رحمت عطا کر</p>
+    <audio controls>
+        <source src="dua_audio_193.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 194: Dua for Guidance in Decision Making -->
+<div class="dua">
+    <h2>دعا فیصلوں میں رہنمائی کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ رَشِّدْنِي فِي قَرَارَاتِ حَيَاتِي</p>
+    <p class="urdu">اے اللہ! میری زندگی کے فیصلوں میں رہنمائی کر</p>
+    <audio controls>
+        <source src="dua_audio_194.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 195: Dua for Protection from Poverty -->
+<div class="dua">
+    <h2>دعا غربت سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْنِبْنِي فَاقَتِ النَّاسِ وَفَقْرِهِمْ</p>
+    <p class="urdu">اے اللہ! مجھے لوگوں کی غربت اور فقیری سے بچا</p>
+    <audio controls>
+        <source src="dua_audio_195.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 196: Dua for Contentment -->
+<div class="dua">
+    <h2>دعا سکون اور اطمینان کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ اجْعَلْنِي رَاضِيًا بِمَا قَسَمْتَ لِي</p>
+    <p class="urdu">اے اللہ! مجھے جو کچھ بھی تونے دیا ہے، اس پر راضی رکھ</p>
+    <audio controls>
+        <source src="dua_audio_196.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 197: Dua for Protection from Diseases -->
+<div class="dua">
+    <h2>دعا بیماریوں سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ عَافِنِي فِي بَدَنِي وَجَمِيعِ أَعْضَائِي</p>
+    <p class="urdu">اے اللہ! مجھے ہر بیماری سے صحت مند رکھ</p>
+    <audio controls>
+        <source src="dua_audio_197.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 198: Dua for Strength and Patience -->
+<div class="dua">
+    <h2>دعا طاقت اور صبر کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ قَوِّنِي فِي قَائِمَاتِ الْأُمُورِ</p>
+    <p class="urdu">اے اللہ! مجھے زندگی کی مشکلات میں طاقت اور صبر دے</p>
+    <audio controls>
+        <source src="dua_audio_198.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 199: Dua for Protection from Unwanted Suffering -->
+<div class="dua">
+    <h2>دعا غیر ضروری تکالیف سے بچاؤ کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ إِنِّي أَعُوذُ بِكَ مِنْ كُلِّ بَلَاءٍ وَشَرٍّ</p>
+    <p class="urdu">اے اللہ! میں ہر قسم کے بلا اور شر سے تیری پناہ چاہتا ہوں</p>
+    <audio controls>
+        <source src="dua_audio_199.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
+
+<!-- Dua 200: Dua for Gratitude and Thankfulness -->
+<div class="dua">
+    <h2>دعا شکرگزاری کے لیے</h2>
+    <p class="arabic">اللّٰہُمَّ لَكَ الشُّكْرُ عَلىٰ مَا نَعْمَلُ وَمَا نَعْرِفُ</p>
+    <p class="urdu">اے اللہ! جو کچھ ہم کرتے ہیں اور جو کچھ ہم جانتے ہیں، اس پر تیرا شکر ہے</p>
+    <audio controls>
+        <source src="dua_audio_200.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="tasbeeh-counter">Tasbeeh Counter</button>
+</div>
